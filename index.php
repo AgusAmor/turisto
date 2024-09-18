@@ -6,22 +6,26 @@
     <h1></h1>
     <section>
         <div id="bannerForm">
-            <img src="https://placehold.co/1920x900" alt="" class="w-100">
-            <form action="#" method="post" class="formIndex">
+            <img src="https://placehold.co/1920x700" alt="">
+            <form action="#" method="post" id="formIndex">
                 <fieldset>
-                    <legend id="legendFormIndex">Title</legend>
-                    <div class="campoForm">
+                    <legend>Title</legend>
+                    <div class="campoForm select">
                         <label for="origen">Origen</label>
                         <select name="origen" id="origen">
-                            <option default></option>
                             <option value="argentina">Argentina</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="chile">Chile</option>
                         </select>
                     </div>
-                    <div class="campoForm">
+                    <div class="campoForm select">
                         <label for="destino">Destino</label>
                         <select name="destino" id="destino">
-                            <option default></option>
                             <option value="argentina">Argentina</option>
+                            <option value="venezuela">Venezuela</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="chile">Chile</option>
                         </select>
                     </div>
                     <div class="campoForm">
@@ -61,13 +65,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/400x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/700x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -85,13 +89,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/400x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/700x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -104,19 +108,21 @@
             </a>
         </div>
     </section>
-    <img src="https://placehold.co/1920x900" alt="" class="w-100">
+    <section class="bannerIndex">
+        <img src="https://placehold.co/1920x900" alt="">
+    </section>
     <section>
         <h2 id="cruceros">Cruceros</h2>
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/400x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/700x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -134,13 +140,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/400x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/700x200" alt="First slide">
+                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
