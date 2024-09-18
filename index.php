@@ -62,50 +62,110 @@
 
     <section>
         <h2 id="nacionales">Vuelos nacionales</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
     </section>
     <section>
         <h2 id="internacionales">Vuelos internacionales</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
     </section>
     <section class="bannerIndex">
@@ -113,74 +173,140 @@
     </section>
     <section>
         <h2 id="cruceros">Cruceros</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
     </section>
     <section>
         <h2 id="paquetes">Paquetes</h2>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/300x300" alt="First slide">
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card">
+                        <img src="https://placehold.co/200x200" alt="">
+                    </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
     </section>
     <section>
         <h3 >Aliados comerciales</h3>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x100" alt="First slide">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x100" alt="First slide">
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
                 </div>
-                <div class="carousel-item">
-                    <img class="d-block w-auto m-auto" src="https://placehold.co/200x100" alt="First slide">
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
+                </div>
+                <div class="slide">
+                    <img src="https://placehold.co/200x100" alt="">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
         </div>
     </section>
 

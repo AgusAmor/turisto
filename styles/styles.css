@@ -15,6 +15,8 @@ h2, h3{
     text-align: center;
     margin-top: 50px;
 }
+/**/
+
 
 /*HEADER*/
 header{
@@ -50,6 +52,8 @@ header{
     padding: 3px;
     text-align: center;
 }
+/**/
+
 
 /*INDEX*/
 #bannerForm{
@@ -156,6 +160,74 @@ header{
 #cruceros{
     margin-top: 10px;
 }
+/**/
+
+/*slider*/
+.slider-container {
+    position: relative;
+    width: auto;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: auto;
+}
+
+.slide {
+    min-width: auto;
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.prev:focus, .next:focus {
+    outline: none;
+}
+  
+button.prev {
+    left: 10px;
+}
+  
+button.next {
+    right: 10px;
+}
+  
+button:hover {
+    color: rgb(255, 75, 240);
+}
+
+.card{
+    width: auto;
+    height: 300px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    padding: 10px;
+}
+/**/
+
 
 /*FOOTER*/
 footer{
@@ -197,3 +269,5 @@ footer{
     gap: 20px;
     font-size: 1.2rem;
 }
+/**/
+
