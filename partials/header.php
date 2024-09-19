@@ -1,5 +1,5 @@
 <body>
-    <header class="d-flex">
+    <header>
         <a href="index.php" class="logo"><img src="img/header.png" alt="Inicio" ></a>
         <div id="headerBar">
             <nav class="navbar">
@@ -14,7 +14,6 @@
                 echo "
                     <a href=#>Iniciar sesión </a>
                     <a href=#>Registrarse </a>
-                
                 ";
             }else{
                 echo "

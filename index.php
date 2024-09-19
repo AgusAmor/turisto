@@ -6,7 +6,7 @@
     <h1></h1>
     <section>
         <div id="bannerForm">
-            <img src="https://placehold.co/1920x700" alt="">
+            <img src="img/banner-index.png" alt="bannerIndex">
             <form action="#" method="post" id="formIndex">
                 <fieldset>
                     <legend>Title</legend>

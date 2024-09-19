@@ -7,13 +7,22 @@
 }
 
 body{
-    background-color: #000000;
+    background-color: rgba(238, 226, 206, 0.10);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
 }
 
 h2, h3{
     font-size: 2rem;
     text-align: center;
     margin-top: 50px;
+    color: rgb(248,160,73);
 }
 /**/
 
@@ -38,6 +47,14 @@ header{
     padding-left: 50%;
 }
 
+.navbar a{
+    color: rgb(6,129,145);
+}
+
+.navbar a:hover{
+    color: rgb(248,160,73);
+}
+
 #sesion_contenedor{
     display: grid;
     width: 15%;
@@ -48,9 +65,15 @@ header{
 
 #sesion_contenedor a{
     border-radius: 20px;
-    background-color: aliceblue;
+    background-color: rgb(6,129,145);
+    color: rgb(238,226,206);
     padding: 3px;
     text-align: center;
+}
+
+#sesion_contenedor a:hover{
+    background-color: rgb(248,160,73);
+    color: rgb(238,226,206);
 }
 /**/
 
@@ -59,7 +82,7 @@ header{
 #bannerForm{
     position: relative;
     width: 100%;
-    height: 700px;
+    height: 650px;
 }
 
 #bannerForm img{
@@ -70,7 +93,7 @@ header{
 
 #formIndex {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 75%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.884);
@@ -81,6 +104,34 @@ header{
     height: auto;
 }
 
+#formIndex input{
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
+}
+
+#formIndex input:focus{
+    border-style: solid;
+    border-color: rgb(248, 160, 73);
+}
+
+#formIndex input:hover, .choices__inner:hover{
+    background-color: rgb(248, 160, 73);
+}
+
+/* input number sin botones */
+/* opera, chrome, safari y edge */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/**/
+
 #formIndex legend{
     text-align: center;
 }
@@ -90,7 +141,6 @@ header{
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border-radius: 5px;
 }
 
 .select label{
@@ -125,24 +175,34 @@ header{
 
 .botoneraForm input{
     border-radius: 20px;
-    background-color: aliceblue;
     padding: 5px;
     text-align: center;
     border-style: none;
 }
 
 #navIndex{
-    margin: 5% auto 3% auto;
-    width: 100%;
+    margin: 0% auto 3% auto;
+    width: 60%;
+    background-color: rgb(238,226,206);
+    background-color: rgb(248,160,73);
+    height: 50px;
+    align-content: center;
+    border-radius: 30px;
 }
 
 #navIndex nav{
     display: flex;
     gap: 2%;
     width: auto;
-    margin-left: 30%;
-    margin-right: 30%;
     justify-content: space-around;
+}
+
+#navIndex nav a{
+    color: rgb(238,226,206);
+}
+
+#navIndex nav a:hover{
+    color: rgb(6,129,145);
 }
 
 .bannerIndex{
@@ -166,12 +226,11 @@ header{
 .slider-container {
     position: relative;
     width: auto;
-    max-width: 1000px;
+    max-width: 960px;
     height: auto;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
     display: flex;
 }
 
@@ -184,7 +243,7 @@ header{
 .slide {
     min-width: auto;
     width: auto;
-    padding: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
     text-align: center;
     font-size: 2rem;
@@ -196,11 +255,16 @@ header{
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0);
-    color: white;
     border: none;
     padding: 15px;
     cursor: pointer;
     font-size: 3rem;
+    color: rgb(248,160,73);
+}
+
+.prev:hover, .next:hover{
+    color: rgb(6, 129, 145);
+    font-size: 3.5rem;
 }
 
 .prev:focus, .next:focus {
@@ -214,41 +278,56 @@ button.prev {
 button.next {
     right: 10px;
 }
-  
-button:hover {
-    color: rgb(255, 75, 240);
-}
 
 .card{
     width: auto;
     height: 300px;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: rgb(155,207,205);
     padding: 10px;
+    border-style: none;
+}
+
+.card img{
+    border-radius: 20px;
 }
 /**/
 
 
 /*FOOTER*/
 footer{
-    background: #ffffff;
+    background: rgb(6,129,145);
     margin-top: 20%;
     bottom: 0%;
+    color: rgb(238, 226, 206);
+}
+
+footer a{
+    color: rgb(238, 226, 206);
+}
+
+footer a:hover{
+    color: rgb(248, 160, 73);
+}
+
+footer h4,h5{
+    color: rgb(248, 160, 73);
 }
 
 .footer_contenedor{
     display: flex;
+    width: 100%;
 }
 
 .navFooter{
     align-content: center;
-    left: 50%;
+    left:30%;
     position: relative;
 }
 
 #contacto{
     position: relative;
-    width: 35%;
+    width: 55%;
     padding: 20px;
 }
 

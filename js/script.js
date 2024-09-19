@@ -33,7 +33,7 @@ function initSlider(sliderContainer) {
     slideIndex += n;
 
     if (slideIndex < 0) {
-      slideIndex = totalGroups - 1;
+      slideIndex = totalGroups;
     }
 
     if (slideIndex >= totalGroups) {
@@ -46,7 +46,7 @@ function initSlider(sliderContainer) {
 
   // Iniciar deslizamiento automático
   function startAutoSlide() {
-    autoSlide = setInterval(() => moverSlide(1), 3000);
+    autoSlide = setInterval(() => moverSlide(1), 5000);
   }
 
   // Detener deslizamiento automático
