@@ -118,18 +118,13 @@ header{
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     width: 45%;
-    height: auto;
+    height: 450px;
 }
 
 #formIndex input{
     border-style: solid;
     border-color: rgba(0,0,0,0.1);
     border-radius: 10px;
-}
-
-#formIndex input:active{
-    border-style: solid;
-    border-color: rgb(248, 160, 73);
 }
 
 #formIndex input:hover, .choices__inner:hover{
@@ -139,7 +134,12 @@ header{
 #formIndex legend{
     text-align: center;
 }
-  
+
+#formIndex input:focus{
+    border-style: solid;
+    border-color: rgb(248, 160, 73);
+}
+
 .campoForm {
     display: block;
     width: 100%;
@@ -165,6 +165,7 @@ header{
 #adultos, #ninios, #mascotas{
     width: 8%;
     margin-right: 3%;
+    text-align: center;
 }
 
 #ida, #vuelta{
@@ -175,13 +176,13 @@ header{
 .botoneraForm{
     text-align: center;
     padding: 2%;
+    align-content: center;
 }
 
-.botoneraForm input{
-    border-radius: 20px;
-    padding: 5px;
-    text-align: center;
-    border-style: none;
+#formIndex .botoneraForm input{
+    border-radius: 30px;
+    padding: 10px;
+    border-color: rgb(248, 160, 73);
 }
 
 /* input number sin botones */
