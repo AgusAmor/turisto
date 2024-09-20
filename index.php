@@ -37,11 +37,11 @@
                     <div class="campoForm">
                         <caption>Pasajeros</caption>
                         <label for="adultos">Adultos:</label>
-                        <input type="number" name="adultos" id="adultos">
+                        <input type="number" name="adultos" id="adultos" min=0 step=1 placeholder=0>
                         <label for="ninios">Niños (<2 años):</label>
-                        <input type="number" name="ninios" id="ninios">
+                        <input type="number" name="ninios" id="ninios" min=0 step=1 placeholder=0>
                         <label for="mascotas">Mascotas:</label>
-                        <input type="number" name="mascotas" id="mascotas">
+                        <input type="number" name="mascotas" id="mascotas" min=0 step=1 placeholder=0>
                     </div>
                     <div class="botoneraForm">
                         <input type="submit" value="Hablar con mi asesor" >

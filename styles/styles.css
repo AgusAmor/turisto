@@ -6,8 +6,23 @@
     list-style: none;
 }
 
+@font-face {
+    font-family: 'myFonts';
+    src: url('fonts/Brand.otf') format('otf'),
+         url('fonts/Brand.ttf') format('ttf'),
+         url('fonts/Brand.woff') format('woff'),
+         url('fonts/GOTHIC.TTF') format('TTF'),
+         url('fonts/GOTHICB.TTF') format('TTF'),
+         url('fonts/GOTHICBI.TTF') format('TTF'),
+         url('fonts/GOTHICI.TTF') format('TTF');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 body{
     background-color: rgba(238, 226, 206, 0.10);
+    font-family: 'myFonts', sans-serif;
+    font-size: 1rem;
 }
 
 a{
@@ -57,7 +72,7 @@ header{
 
 #sesion_contenedor{
     display: grid;
-    width: 15%;
+    width: 20%;
     align-content: center;
     padding: 2%;
     gap: 10%;
@@ -69,11 +84,13 @@ header{
     color: rgb(238,226,206);
     padding: 3px;
     text-align: center;
+    align-content: center;
 }
 
 #sesion_contenedor a:hover{
     background-color: rgb(248,160,73);
-    color: rgb(238,226,206);
+    height: 50px;
+    font-size: 1.3rem;
 }
 /**/
 
@@ -107,9 +124,10 @@ header{
 #formIndex input{
     border-style: solid;
     border-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-#formIndex input:focus{
+#formIndex input:active{
     border-style: solid;
     border-color: rgb(248, 160, 73);
 }
@@ -117,20 +135,6 @@ header{
 #formIndex input:hover, .choices__inner:hover{
     background-color: rgb(248, 160, 73);
 }
-
-/* input number sin botones */
-/* opera, chrome, safari y edge */
-input[type="number"]::-webkit-inner-spin-button, 
-input[type="number"]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-/**/
 
 #formIndex legend{
     text-align: center;
@@ -165,7 +169,7 @@ input[type="number"] {
 
 #ida, #vuelta{
     width: 23%;
-    margin-right: 4%;
+    margin-right: 2%;
 }
 
 .botoneraForm{
@@ -179,6 +183,20 @@ input[type="number"] {
     text-align: center;
     border-style: none;
 }
+
+/* input number sin botones */
+/* opera, chrome, safari y edge */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/**/
 
 #navIndex{
     margin: 0% auto 3% auto;
@@ -199,10 +217,13 @@ input[type="number"] {
 
 #navIndex nav a{
     color: rgb(238,226,206);
+    font-weight: bold;
+    padding: 15px;
 }
 
 #navIndex nav a:hover{
     color: rgb(6,129,145);
+    font-size: 1.3rem;
 }
 
 .bannerIndex{
