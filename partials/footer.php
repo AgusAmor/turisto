@@ -19,17 +19,17 @@
                     </div>
                 </div>
                 <div>
-                    <a href="terminosYcondiciones.php">Términos y condiciones</a>
+                    <a href="#">Términos y condiciones</a>
                 </div>
             </div>
         </div>
         <div class="navFooter">
             <nav>
-                <li><a href="index.php">Inicio</a></li>
-                <li><a href="index.php#nacionales">Vuelos Nacionales</a></li>
-                <li><a href="index.php#internacionales">Vuelos Internacionales</a></li>
-                <li><a href="index.php#cruceros">Cruceros</a></li>
-                <li><a href="index.php#paquetes">Paquetes</a></li>
+                <li><a href="/web-app-turisto/">Inicio</a></li>
+                <li><a href="/web-app-turisto/#nacionales">Vuelos Nacionales</a></li>
+                <li><a href="/web-app-turisto/#internacionales">Vuelos Internacionales</a></li>
+                <li><a href="/web-app-turisto/#cruceros">Cruceros</a></li>
+                <li><a href="/web-app-turisto/#paquetes">Paquetes</a></li>
             </nav>
         </div>
     </div>

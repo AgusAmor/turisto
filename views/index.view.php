@@ -5,7 +5,7 @@
             <img src="img/banner-index.png" alt="bannerIndex">
             <form action="#" method="post" id="formIndex">
                 <fieldset>
-                    <legend>Title</legend>
+                    <legend>Busca tu destino *avion*</legend>
                     <div class="campoForm select">
                         <label for="origen">Origen</label>
                         <select name="origen" id="origen">

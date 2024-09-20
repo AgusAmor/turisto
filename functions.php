@@ -11,8 +11,15 @@ function urlIs($value){
     return $_SERVER['REQUEST_URI'] === $value;
 }
 
+function abort($value){
+    echo "<pre>";
+    var_dump($value);
+    echo "no existe </pre>";
+    die();
+}
+
 function logInCheck(){
-    require 'views/partials/connect.php';
+    require 'partials/connect.php';
 
     if (isset($_POST['user'])){
         $email = $_POST['user'];
@@ -21,29 +28,22 @@ function logInCheck(){
         $contra = $_POST['pass'];
     }
     
-    $consulta = "SELECT * FROM usuario WHERE email = '$email' AND contra = MD5('$contra')";
+    $query = "SELECT * FROM usuario WHERE email = '$email' AND contra = MD5('$contra')";
     
-    $resultado = mysqli_query($con, $consulta);
-    $fila = mysqli_fetch_assoc($resultado);
+    $result = mysqli_query($con, $query);
+    $row = mysqli_fetch_assoc($result);
     
-    if ($fila['acceso'] == 'admin'){
-        if ($fila['estado'] == 'banneado'){
-            header("Location: /web-app/login?ban=ban");
+    if ($row['acceso'] == 'usuario'){
+        if ($row['estado'] == 'banneado'){
+            header("Location: ");
         }else{
-            $_SESSION = $fila;
-            header("Location: /web-app/admin/");
-        }
-    }else{
-        if ($fila['estado'] == 'banneado'){
-            header("Location: /web-app/login?ban=ban");
-        }else{
-            $_SESSION = $fila;
-            header("Location: /web-app/");
+            $_SESSION = $row;
+            header("Location: ");
         }
     }
     
-    if($fila == NULL){
-        header("Location: /web-app/login?error=error");
+    if($row == NULL){
+        header("Location: ");
     }
 }
 
