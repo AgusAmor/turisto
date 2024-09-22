@@ -10,14 +10,14 @@
             </nav>
             <div id="sesion_contenedor" >
             <?php
-            if (!$_SESSION){
+            if (isset($_SESSION)){
                 echo "
-                    <a href=/web-app-turisto/logIn >Iniciar sesión </a>
-                    <a href=#>Registrarse </a>
+                    <a href=functions/sesion/logOut.php>Cerrar sesión </a>
                 ";
             }else{
                 echo "
-                    <a href=#>Cerrar sesión </a>
+                    <a href=/web-app-turisto/logIn >Iniciar sesión </a>
+                    <a href=#>Registrarse </a>
                 ";
             }
             ?>
