@@ -339,7 +339,7 @@ button.next {
 }
 
 .formSesion fieldset{
-    padding: 60px;
+    padding-top: 45px;
     display: grid;
     gap: 2%;
 }
@@ -392,8 +392,6 @@ button.next {
 .redirectSesion p, #signUpRedirect, #logInRedirect{
     font-size: 0.8rem;
 }
-
-
 /**/
 
 
@@ -402,8 +400,8 @@ button.next {
     position: absolute;
     border-radius: 30px;
     overflow: hidden;
-    /* top: 5%;
-    left: 25%; */
+    top: 8%;
+    left: 25%;
     width: 50%;
     height: auto;
     border-style: solid;
@@ -420,7 +418,7 @@ button.next {
 
 .formRegistrarse fieldset{
     display: grid;
-    padding: 20px;
+    padding: 30px;
 }
 
 .formRegistrarse .campoForm{
@@ -457,20 +455,54 @@ button.next {
     border: rgb(248, 160, 73) solid;
     border-radius: 15px;
     padding: 5px;
+    width: 170px;
 }
 
 .formRegistrarse input:hover{
     background-color: rgb(248, 160, 73);
 }
 
-#terms{
+#terminos{
     font-size: 1rem;
     margin: 0px;
     margin-left: 4px;
 }
 
-.formRegistrarse input{
-    right: 0px;
+#terms{
+    width: 15px;
+}
+
+#terminosContenedor{
+    width: 100%;
+    padding: 0px 15%;
+    margin: auto;
+}
+
+#nombreApellido, #mediosContacto{
+    justify-content: space-between;
+}
+
+#contrasenias{
+    text-align: center;
+    background-color: rgb(155,207,205);
+}
+
+#contrasenias div{
+    display: grid;
+    align-content: center;
+    margin: auto;
+}
+
+#contrasenias input{
+    text-align: center;
+    margin: auto;
+}
+
+#name{
+    margin-left: 45px;
+}
+#email{
+    margin-left: 60px;
 }
 
 /**/
