@@ -76,3 +76,20 @@ function initSlider(sliderContainer) {
 
 // Inicia todos los sliders
 document.querySelectorAll('.slider-container').forEach(initSlider);
+
+
+
+var pass = document.getElementById('pass');
+var pass2 = document.getElementById('pass2');
+var registrarse = document.getElementById('registrarse');
+var formRegistrarse = document.getElementById('formRegistrarse');
+
+btn_altaUser.onclick = function(event) {
+  event.preventDefault();
+  if (pass.value !== pass2.value) {
+    alert("Las contraseñas no coinciden");
+  } else {
+    formRegistrarse.action = "scripts/sesion/signUpCheck.php";
+    formRegistrarse.submit();
+  }
+}

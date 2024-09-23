@@ -12,8 +12,8 @@
                 <input type="text" name="surname" id="surname" maxlength="20" required />
             </div>
             <div class="campoForm">
-                <label for="nacionality">Nacionalidad <strong>*</strong></label>
-                <input type="text" name="nacionality" id="nacionality" maxlength="30" required />
+                <label for="nationality">Nacionalidad <strong>*</strong></label>
+                <input type="text" name="nationality" id="nationality" maxlength="30" required />
             </div>
             <div class="campoForm">
                 <label for="phone">Telefono <strong>*</strong></label>
@@ -21,8 +21,8 @@
             </div>
             <hr>
             <div class="campoForm">
-                <label for="user">Email <strong>*</strong></label>
-                <input type="email" name="user" id="user" maxlength="50" required />
+                <label for="email">Email <strong>*</strong></label>
+                <input type="email" name="email" id="email" maxlength="50" required />
             </div>
             <div class="campoForm">
                 <label for="pass">Contraseña <strong>*</strong></label>
