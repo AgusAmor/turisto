@@ -2,11 +2,11 @@
     session_start();
     require '../../partials/connect.php';
 
-    if (isset($_GET['user'])){
-        $email = $_GET['user'];
+    if (isset($_POST['user'])){
+        $email = $_POST['user'];
     }
-    if (isset($_GET['pass'])){
-        $pass = $_GET['pass'];
+    if (isset($_POST['pass'])){
+        $pass = $_POST['pass'];
     }
     
     $query = "SELECT * FROM user WHERE email = '$email' AND password = '$pass'";

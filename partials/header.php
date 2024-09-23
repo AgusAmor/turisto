@@ -17,7 +17,7 @@
             }else{
                 echo "
                     <a href=/web-app-turisto/logIn >Iniciar sesión </a>
-                    <a href=#>Registrarse </a>
+                    <a href=/web-app-turisto/signUp >Registrarse </a>
                 ";
             }
             ?>

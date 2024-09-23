@@ -6,7 +6,6 @@ create table if not exists user(
     email varchar(50) not null,
     password varchar(200) not null,
     name varchar(20) not null,
-    name2 varchar(20),
     surname varchar(20) not null,
     nationality varchar(30),
     phone varchar(20),
