@@ -12,10 +12,10 @@
                 <div class="redesFooter">
                     <h5>Nuestras redes</h5>
                     <div>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-whatsapp"></i></a>
-                        <a href=""><i class="bi bi-tiktok"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
+                        <a href="https://www.instagram.com/turisto_ar/" target="blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/message/SJ3EQTVAVVS3B1?autoload=1&app_absent=0" target="blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="" target="blank"><i class="bi bi-tiktok"></i></a>
+                        <a href="" target="blank"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
                 <div>
