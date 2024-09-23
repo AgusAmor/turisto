@@ -381,6 +381,19 @@ button.next {
     background-color: rgb(248, 160, 73);
 }
 
+.redirectSesion{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.redirectSesion p, #signUpRedirect, #logInRedirect{
+    font-size: 0.8rem;
+}
+
+
 /**/
 
 
@@ -389,10 +402,10 @@ button.next {
     position: absolute;
     border-radius: 30px;
     overflow: hidden;
-    top: 30%;
-    left: 30%;
-    width: 40%;
-    height: 350px;
+    /* top: 5%;
+    left: 25%; */
+    width: 50%;
+    height: auto;
     border-style: solid;
     border-color: rgb(248, 160, 73);
 }
@@ -404,6 +417,62 @@ button.next {
     object-fit: cover;
     position: absolute;
 }
+
+.formRegistrarse fieldset{
+    display: grid;
+    padding: 20px;
+}
+
+.formRegistrarse .campoForm{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    align-content: center;
+}
+
+.formRegistrarse label{
+    align-content: center;
+    height: 100%;
+}
+
+.formRegistrarse #registrarse{
+    margin: auto 35%;
+    width: 30%;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.formRegistrarse a{
+    position: absolute;
+    font-size: 1.5rem;
+    margin: 2%;
+    color: rgb(6, 129, 145);
+}
+
+.formRegistrarse a:hover{
+    color: rgb(248, 160, 73);
+}
+
+.formRegistrarse input{
+    border: rgb(248, 160, 73) solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.formRegistrarse input:hover{
+    background-color: rgb(248, 160, 73);
+}
+
+#terms{
+    font-size: 1rem;
+    margin: 0px;
+    margin-left: 4px;
+}
+
+.formRegistrarse input{
+    right: 0px;
+}
+
 /**/
 
 

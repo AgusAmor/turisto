@@ -13,6 +13,9 @@
                 <input type="password" name="pass" id="pass" required />
             </div>
             <input type="submit" value="Iniciar Sesión" id="iniciarSesion">
+            <div class="redirectSesion">
+                <p>¿Todavía no sos parte de Turisto? </p><a href="/web-app-turisto/signUp" id="signUpRedirect">Registrate</a>
+            </div>
         </fieldset>
     </form>
 </section>

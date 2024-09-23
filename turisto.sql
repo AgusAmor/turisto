@@ -5,7 +5,7 @@ create table if not exists user(
 	id_user int not null,
     email varchar(50) not null,
     password varchar(200) not null,
-    name varchar(20) not null,
+    name varchar(20) not null, 
     surname varchar(20) not null,
     nationality varchar(30),
     phone varchar(20),
