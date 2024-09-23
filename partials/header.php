@@ -10,9 +10,9 @@
             </nav>
             <div id="sesion_contenedor" >
             <?php
-            if (isset($_SESSION)){
+            if (isset($_SESSION['email'])){
                 echo "
-                    <a href=functions/sesion/logOut.php>Cerrar sesión </a>
+                    <a href=scripts/sesion/logOut.php>Cerrar sesión </a>
                 ";
             }else{
                 echo "

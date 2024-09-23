@@ -1,6 +1,6 @@
 <main>
 <section>
-    <form action="functions/sesion/logInCheck.php" method="get" class="formSesion">
+    <form action="scripts/sesion/logInCheck.php" method="get" class="formSesion">
         <img src="img/banner-index.png" alt="">
         <a href="/web-app-turisto/">&#10094</a>
         <fieldset>
