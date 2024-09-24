@@ -1,4 +1,4 @@
-<body class="<?php echo isset($bodyClass) ? $bodyClass : ''; ?>">
+<body>
     <header>
         <a href="/web-app-turisto/" class="logo"><img src="img/header.png" alt="Inicio" ></a>
         <div id="headerBar">

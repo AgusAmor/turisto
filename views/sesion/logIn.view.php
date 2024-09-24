@@ -1,7 +1,8 @@
+<body class="<?php echo isset($data['bodyClass']) ? $data['bodyClass'] : ''; ?>">
 <main>
 <section>
     <form action="model/logInCheck.php" method="post" class="formSesion">
-        <img src="img/banner-index.png" alt="">
+        <img src="img/fondoForm.png" alt="">
         <a href="/web-app-turisto/">&#10094</a>
         <fieldset>
             <div class="campoForm">
@@ -20,3 +21,4 @@
     </form>
 </section>
 </main>
+</body>

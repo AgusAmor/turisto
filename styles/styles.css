@@ -328,7 +328,7 @@ button.next {
     position: absolute;
     border-radius: 30px;
     overflow: hidden;
-    top: 30%;
+    top: 20%;
     left: 30%;
     width: 40%;
     height: 350px;
@@ -358,11 +358,16 @@ button.next {
     align-content: center;
 }
 
-.formSesion #iniciarSesion{
+#iniciarSesion{
     margin: auto 35%;
     width: 30%;
     padding: 5px;
     border-radius: 30px;
+    transition: border,background-color 0.1s linear;
+}
+
+#iniciarSesion:hover{
+    border: solid rgb(155,207,205);
 }
 
 .formSesion a{
@@ -370,22 +375,32 @@ button.next {
     font-size: 1.5rem;
     margin: 2%;
     text-align: center;
-    color: rgb(6, 129, 145);
+    color: rgb(248, 160, 73);
+    transition: color,font-size 0.1s linear;
 }
 
 .formSesion a:hover{
-    color: rgb(248, 160, 73);
+    color: rgb(155,207,205);
+    font-size: 2rem;
 }
 
 .formSesion input{
     border: rgb(248, 160, 73) solid;
     border-radius: 15px;
     text-align: center;
+    transition: background-color 0.1s linear;
 }
 
 .formSesion input:hover{
     background-color: rgb(248, 160, 73);
 }
+
+.formSesion input:focus-visible{
+    border: solid rgb(155,207,205);
+    outline: none;
+    background-color: rgb(248, 160, 73);
+}
+
 
 .redirectSesion{
     display: flex;
@@ -397,11 +412,19 @@ button.next {
 
 .redirectSesion p, #signUpRedirect, #logInRedirect{
     font-size: 0.8rem;
+    font-weight: bold;
+    transition: color 0.1s linear;
 }
 /**/
 
 
 /* REGISTER */
+body.fondoForm {
+    font-family: 'myFonts', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(241 218 180);
+}
+
 .formRegistrarse{
     position: absolute;
     border-radius: 30px;
@@ -448,11 +471,14 @@ button.next {
     position: absolute;
     font-size: 1.5rem;
     margin: 2%;
-    color: rgb(6, 129, 145);
+    color: rgb(248, 160, 73);
+    font-weight: bold;
+    transition: font-size 0.1s linear;
 }
 
 .formRegistrarse a:hover{
-    color: rgb(248, 160, 73);
+    font-size: 2rem;
+    color: rgb(155,207,205);
 }
 
 .formRegistrarse input{
@@ -460,9 +486,17 @@ button.next {
     border-radius: 15px;
     padding: 5px;
     width: 170px;
+    background-color: rgb(238, 226, 206)
 }
 
 .formRegistrarse input:hover{
+    background-color: rgb(248, 160, 73);
+    transition: background-color 0.1s linear;
+}
+
+.formRegistrarse input:focus-visible{
+    border: solid rgb(155,207,205);
+    outline: none;
     background-color: rgb(248, 160, 73);
 }
 
@@ -482,13 +516,23 @@ button.next {
     margin: auto;
 }
 
+#terminosContenedor a{
+    color: rgb(0,0,0);
+    transition: color 0.1s linear;
+}
+
+#terminosContenedor a:hover{
+    color: rgb(155,207,205);
+}
+
 #nombreApellido, #mediosContacto{
     justify-content: space-between;
 }
 
 #contrasenias{
     text-align: center;
-    background-color: rgb(155,207,205);
+    background-color: rgb(248, 160, 73, 0.2);
+    border-radius: 10px;
 }
 
 #contrasenias div{
@@ -505,8 +549,27 @@ button.next {
 #name{
     margin-left: 45px;
 }
+
 #email{
-    margin-left: 60px;
+    margin-left: 65px;
+}
+
+#nationality{
+    margin-left: 5px;
+}
+
+#registrarse{
+    transition: border 0.1s linear;
+}
+
+#registrarse:hover{
+    border: solid rgb(155,207,205);
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: rgb(248, 160, 73); /* Cambiar el color de la casilla y mantener la palomita */
+    border-radius: 3px;
 }
 
 /**/
