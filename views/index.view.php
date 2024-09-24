@@ -167,7 +167,7 @@
     <section class="bannerIndex">
         <img src="https://placehold.co/1920x900" alt="">
     </section>
-    <!-- <section>
+    <section>
         <h2 id="cruceros">Cruceros</h2>
         <div class="slider-container">
             <div class="slider">

@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'myFonts';
     src: url('fonts/Brand.otf') format('otf'),
@@ -44,11 +48,24 @@ h2, h3{
 
 /*HEADER*/
 header{
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-content: center;
-    width: 100%;
     padding-top: 5px;
     height: 100px;
+    transition: background-color 0.3s, color 0.5s;
+    z-index: 1000;
+}
+
+header.scrolled {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+header.scrolled a{
+    color: rgb(238, 226, 206);
 }
 
 #headerBar{
@@ -125,10 +142,11 @@ header{
     height: 450px;
 }
 
-#formIndex input{
+#formIndex input, .choices__inner{
     border-style: solid;
     border-color: rgba(0,0,0,0.1);
     border-radius: 10px;
+    transition: background-color 0.1s linear;
 }
 
 #formIndex input:hover, .choices__inner:hover{

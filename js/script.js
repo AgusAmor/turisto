@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 // SLIDER
 function initSlider(sliderContainer) {
   const slider = sliderContainer.querySelector('.slider');
@@ -78,18 +77,15 @@ function initSlider(sliderContainer) {
 document.querySelectorAll('.slider-container').forEach(initSlider);
 
 
+// HEADER STICKY
+const header = document.getElementById('header');
+const logo = document.getElementById('logo');
+const logoScroll = document.getElementById('logoScroll');
 
-var pass = document.getElementById('pass');
-var pass2 = document.getElementById('pass2');
-var registrarse = document.getElementById('registrarse');
-var formRegistrarse = document.getElementById('formRegistrarse');
-
-btn_altaUser.onclick = function(event) {
-  event.preventDefault();
-  if (pass.value !== pass2.value) {
-    alert("Las contraseñas no coinciden");
-  } else {
-    formRegistrarse.action = "scripts/sesion/signUpCheck.php";
-    formRegistrarse.submit();
-  }
-}
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) { // Cambia la cantidad de píxeles que deseas
+                header.classList.add('scrolled');
+              } else {
+                header.classList.remove('scrolled');
+              }
+        });

@@ -1,6 +1,6 @@
 <body>
-    <header>
-        <a href="/web-app-turisto/" class="logo"><img src="img/header.png" alt="Inicio" ></a>
+    <header id="header">
+        <a href="/web-app-turisto/" class="logo"><img src="img/logo.png" alt="Inicio"></a>
         <div id="headerBar">
             <nav class="navbar">
                 <li><a href="/web-app-turisto/">Inicio</a></li>
