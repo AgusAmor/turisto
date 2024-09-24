@@ -1,4 +1,4 @@
-<body>
+<body class="<?php echo isset($bodyClass) ? $bodyClass : ''; ?>">
     <header>
         <a href="/web-app-turisto/" class="logo"><img src="img/header.png" alt="Inicio" ></a>
         <div id="headerBar">
@@ -12,7 +12,7 @@
             <?php
             if (isset($_SESSION['email'])){
                 echo "
-                    <a href=scripts/sesion/logOut.php>Cerrar sesión </a>
+                    <a href=model/logOut.php>Cerrar sesión </a>
                 ";
             }else{
                 echo "

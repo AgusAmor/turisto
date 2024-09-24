@@ -60,14 +60,17 @@ header{
     width: 90%;
     display: flex;
     padding-left: 50%;
+    align-content: center;
 }
 
 .navbar a{
     color: rgb(6,129,145);
+    transition: color, font-size 0.1s linear;
 }
 
 .navbar a:hover{
     color: rgb(248,160,73);
+    font-size: 1.1rem;
 }
 
 #sesion_contenedor{
@@ -85,11 +88,12 @@ header{
     padding: 3px;
     text-align: center;
     align-content: center;
+    transition: background-color,font-size 0.2s linear;
 }
 
 #sesion_contenedor a:hover{
     background-color: rgb(248,160,73);
-    height: 50px;
+    /* height: 50px; */
     font-size: 1.3rem;
 }
 /**/
@@ -221,6 +225,7 @@ input[type="number"] {
     color: rgb(238,226,206);
     font-weight: bold;
     padding: 15px;
+    transition: color, font-size 0.2s linear;
 }
 
 #navIndex nav a:hover{
@@ -283,6 +288,7 @@ input[type="number"] {
     cursor: pointer;
     font-size: 3rem;
     color: rgb(248,160,73);
+    transition: color, font-size 0.1s linear;
 }
 
 .prev:hover, .next:hover{
@@ -404,8 +410,6 @@ button.next {
     left: 25%;
     width: 50%;
     height: auto;
-    border-style: solid;
-    border-color: rgb(248, 160, 73);
 }
 
 .formRegistrarse img{
@@ -518,6 +522,8 @@ footer{
 
 footer a{
     color: rgb(238, 226, 206);
+    font-weight: bold;
+    transition: color 0.2s linear;
 }
 
 footer a:hover{
@@ -549,6 +555,10 @@ footer h4,h5{
     display: flex;
     justify-content: space-between;
     gap: 1%;
+}
+
+#location{
+    font-weight: 100;
 }
 
 .redesFooter{

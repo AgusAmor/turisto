@@ -7,7 +7,7 @@
                     <li><i class="bi bi-phone-fill"></i> +54 9 11 6407-4689</li>
                     <li><i class="bi bi-telephone-fill"></i> 4545-5555</li>
                     <li><i class="bi bi-envelope-at-fill"></i> administracion@turistosas.com</li>
-                    <li><a href="https://maps.app.goo.gl/wmnxcf4apjKumQvk9" target="blank"><i class="bi bi-geo-alt-fill"></i> Maipú 225</a></li>
+                    <li><a href="https://maps.app.goo.gl/wmnxcf4apjKumQvk9" id="location" target="blank"><i class="bi bi-geo-alt-fill"></i> Maipú 225</a></li>
                 </ul>
                 <div class="redesFooter">
                     <h5>Nuestras redes</h5>

@@ -167,7 +167,7 @@
     <section class="bannerIndex">
         <img src="https://placehold.co/1920x900" alt="">
     </section>
-    <section>
+    <!-- <section>
         <h2 id="cruceros">Cruceros</h2>
         <div class="slider-container">
             <div class="slider">
@@ -220,7 +220,7 @@
             <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
             <button class="next" onclick="moverSlide(1)">&#10095;</button>
         </div>
-    </section>
+    </section> -->
     <section>
         <h2 id="paquetes">Paquetes</h2>
         <div class="slider-container">

@@ -18,35 +18,6 @@ function abort($value){
     die();
 }
 
-function logInCheck(){
-    require 'partials/connect.php';
-
-    if (isset($_POST['user'])){
-        $email = $_POST['user'];
-    }
-    if (isset($_POST['pass'])){
-        $contra = $_POST['pass'];
-    }
-    
-    $query = "SELECT * FROM usuario WHERE email = '$email' AND contra = MD5('$contra')";
-    
-    $result = mysqli_query($con, $query);
-    $row = mysqli_fetch_assoc($result);
-    
-    if ($row['acceso'] == 'usuario'){
-        if ($row['estado'] == 'banneado'){
-            header("Location: ");
-        }else{
-            $_SESSION = $row;
-            header("Location: ");
-        }
-    }
-    
-    if($row == NULL){
-        header("Location: ");
-    }
-}
-
 function signUpCheck(){
     require 'views/partials/connect.php';
 

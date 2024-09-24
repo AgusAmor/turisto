@@ -1,7 +1,7 @@
 <main>
 <section>
-    <form action="scripts/sesion/signUpCheck.php" method="post" class="formRegistrarse">
-        <!-- <img src="img/banner-index.png" alt=""> -->
+    <form action="model/signUpCheck.php" method="post" class="formRegistrarse">
+        <img src="img/fondoForm.png" alt="">
         <a href="/web-app-turisto/">&#10094</a>
         <fieldset>
             <div class="campoForm" id="nombreApellido">
