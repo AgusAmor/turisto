@@ -94,17 +94,22 @@ header.scrolled a{
     gap: 10%;
 }
 
-#sesion_contenedor a{
+#sesion_contenedor a, button{
     border-radius: 20px;
     background-color: rgb(6,129,145);
     color: rgb(238,226,206);
+    border: none;
     padding: 3px;
     text-align: center;
     align-content: center;
     transition: background-color,font-size 0.2s linear;
 }
 
-#sesion_contenedor a:hover{
+#btn_iniciarSesion{
+    outline: none;
+}
+
+#sesion_contenedor a:hover, button:hover{
     background-color: rgb(248,160,73);
     font-size: 1.3rem;
 }
@@ -332,101 +337,6 @@ button.next {
 
 .card img{
     border-radius: 20px;
-}
-/**/
-
-
-/* LOGIN */
-.formSesion{
-    position: absolute;
-    border-radius: 30px;
-    overflow: hidden;
-    top: 20%;
-    left: 30%;
-    width: 40%;
-    height: 350px;
-    border-style: solid;
-    border-color: rgb(248, 160, 73);
-}
-
-.formSesion img{
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.formSesion fieldset{
-    padding-top: 45px;
-    display: grid;
-    gap: 2%;
-}
-
-.formSesion .campoForm{
-    width: 50%;
-    margin: auto 25%;
-    display: grid;
-    text-align: center;
-    align-content: center;
-}
-
-#iniciarSesion{
-    margin: auto 35%;
-    width: 30%;
-    padding: 5px;
-    border-radius: 30px;
-    transition: border,background-color 0.1s linear;
-}
-
-#iniciarSesion:hover{
-    border: solid rgb(155,207,205);
-}
-
-.formSesion a{
-    position: absolute;
-    font-size: 1.5rem;
-    margin: 2%;
-    text-align: center;
-    color: rgb(248, 160, 73);
-    transition: color,font-size 0.1s linear;
-}
-
-.formSesion a:hover{
-    color: rgb(155,207,205);
-    font-size: 2rem;
-}
-
-.formSesion input{
-    border: rgb(248, 160, 73) solid;
-    border-radius: 15px;
-    text-align: center;
-    transition: background-color 0.1s linear;
-}
-
-.formSesion input:hover{
-    background-color: rgb(248, 160, 73);
-}
-
-.formSesion input:focus-visible{
-    border: solid rgb(155,207,205);
-    outline: none;
-    background-color: rgb(248, 160, 73);
-}
-
-
-.redirectSesion{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.redirectSesion p, #signUpRedirect, #logInRedirect{
-    font-size: 0.8rem;
-    font-weight: bold;
-    transition: color 0.1s linear;
 }
 /**/
 
