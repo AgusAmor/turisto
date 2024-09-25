@@ -3,7 +3,7 @@ $servidor = 'localhost';
 $usuario = 'root';
 $contrasena = '';
 $bbdd = 'turisto';
-$puerto = '336';
+$puerto = '3306';
 
 
 try{

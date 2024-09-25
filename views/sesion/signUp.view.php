@@ -28,7 +28,7 @@
                 
                 <div>
                     <label for="phone">Telefono</label>
-                    <input type="text" id="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12)" />
+                    <input type="text" name="phone" id="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12)" />
                 </div>
             </div>
             <div class="campoForm" id="contrasenias">
