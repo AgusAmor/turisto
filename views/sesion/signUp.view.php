@@ -50,7 +50,7 @@
                 <input type="submit" value="Registrarse" id="registrarse">
             </div>
             <div class="redirectSesion">
-                <p>¿Ya eres parte de Turisto? </p><a href="/web-app-turisto/logIn" id="logInRedirect" >Inicia Sesión</a>
+                <p>¿Ya eres parte de Turisto? </p><a href="/web-app-turisto/?user=registed" id="logInRedirect" >Inicia Sesión</a>
             </div>
         </fieldset>
     </form>

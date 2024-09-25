@@ -11,6 +11,7 @@
     
     $stmt = $con->prepare("SELECT * FROM user WHERE email = ?");
     $stmt->bind_param("s", $email);
+    var_dump($stmt);
     $stmt->execute();
     $stmt->bind_result($id, $email, $hashedPassword, $name, $surname, $nationality, $phone, $access, $banned);
     $stmt->fetch();
@@ -20,7 +21,7 @@ if ($hashedPassword) {
     if (password_verify($pass, $hashedPassword)) {
         if ($access == 'usuario'){
             if ($banned == '1'){
-                header("Location: /web-app-turisto/logIn?banned=youAreBanned");
+                header("Location: /web-app-turisto/?banned=youAreBanned");
             }else{
                 $_SESSION['id'] = $id;
                 $_SESSION['email'] = $email;
@@ -31,13 +32,12 @@ if ($hashedPassword) {
                 $_SESSION['access'] = $access;
                 $_SESSION['banned'] = $banned;
                 header("Location: /web-app-turisto/");
-                echo "Contraseña correcta. Acceso permitido.";
             }
-        } else {
-            header("Location: /web-app-turisto/logIn?password=wrongPassword");
         }
     } else {
-        header("Location: /web-app-turisto/logIn?email=emailNotFound");
+        header("Location: /web-app-turisto/?password=wrongPassword");
     }
+}else {
+    header("Location: /web-app-turisto/?email=emailNotFound");
 }
 ?>

@@ -23,7 +23,13 @@
             ?>
             </div>
         </div>
-        <div id="modalContainer">
+        <?php
+        if(isset($_GET['user']) || isset($_GET['password']) || isset($_GET['banned']) || isset($_GET['email'])){
+            echo "<div id=modalContainer class=open >";
+        }else{
+            echo "<div id=modalContainer>";
+        }
+        ?>
             <form action="model/logInCheck.php" method="post" class="formSesion">
                 <img src="img/fondoForm.png" alt="">
                 <button id="btn_cerrarModal"><i class="bi bi-x"></i></button>

@@ -13,8 +13,8 @@ if (btn_cerrarModal) {
     };
 }
 
-if (modalContainer) {
-    modalContainer.onclick = function() {
+window.onclick = function(event) {
+    if (event.target === modalContainer) {
         modalContainer.classList.remove('open');
-    };
+    }
 }

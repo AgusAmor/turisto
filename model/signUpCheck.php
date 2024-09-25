@@ -29,7 +29,7 @@ if ($emailExists) {
     $stmt->bind_param("sssssisb", $email, $pass, $name, $surname, $nationality, $phone, $access, $banned);
     $stmt->execute();
     $stmt->close();
-    header ("Location: /web-app-turisto/logIn?user=registed");
+    header ("Location: /web-app-turisto/?user=registed");
 }
 $con->close();
 ?>
