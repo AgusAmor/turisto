@@ -15,4 +15,5 @@ $_SESSION;
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href= "styles/styles.css"/>
     <link rel="stylesheet" href= "styles/loginModal.css"/>
+    <link rel="stylesheet" href= "styles/slides.css"/>
 </head>
