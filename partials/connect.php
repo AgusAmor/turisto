@@ -5,5 +5,9 @@ $contrasena = '';
 $bbdd = 'turisto';
 $puerto = '3306';
 
-$con = mysqli_connect($servidor, $usuario, $contrasena, $bbdd, $puerto);
+$con = new mysqli($servidor, $usuario, $contrasena, $bbdd, $puerto);
+
+if ($con->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
 ?>

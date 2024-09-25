@@ -8,17 +8,17 @@
             <div class="campoForm" id="nombreApellido">
                 <div>
                     <label for="name">Nombre</label>
-                    <input type="text" name="name" id="name" maxlength="20" required />
+                    <input type="text" name="name" id="name" maxlength="25" pattern="[A-Za-z\s]+" required />
                 </div>
 
                 <div>
                     <label for="surname">Apellido</label>
-                    <input type="text" name="surname" id="surname" maxlength="20" required />
+                    <input type="text" name="surname" id="surname" maxlength="25" pattern="[A-Za-z\s]+" required />
                 </div>
             </div>
             <div class="campoForm">
                 <label for="nationality">Nacionalidad</label>
-                <input type="text" name="nationality" id="nationality" maxlength="30" required />
+                <input type="text" name="nationality" id="nationality" maxlength="25" pattern="[A-Za-z\s]+" required />
             </div>
             <div class="campoForm" id="mediosContacto">
                 <div>
@@ -28,7 +28,7 @@
                 
                 <div>
                     <label for="phone">Telefono</label>
-                    <input type="number" name="phone" id="phone" maxlength="20" required />
+                    <input type="text" id="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12)" />
                 </div>
             </div>
             <div class="campoForm" id="contrasenias">

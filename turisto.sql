@@ -4,11 +4,11 @@ use turisto;
 create table if not exists user(
 	id_user int not null auto_increment primary key,
     email varchar(50) not null,
-    password varchar(200) not null,
-    name varchar(20) not null, 
-    surname varchar(20) not null,
-    nationality varchar(30),
-    phone varchar(15),
+    password varchar(60) not null,
+    name varchar(25) not null, 
+    surname varchar(25) not null,
+    nationality varchar(25),
+    phone varchar(20),
     access varchar(10) not null,
     banned boolean not null
 );
