@@ -3,7 +3,7 @@
 <section>
     <form action="model/signUpCheck.php" method="post" class="formRegistrarse">
         <img src="img/fondoForm.png" alt="fondoForm">
-        <a href="/web-app-turisto/">&#10094</a>
+        <a href="/web-app-turisto/"><i class="bi bi-chevron-left"></i></i></a>
         <fieldset>
             <div class="campoForm" id="nombreApellido">
                 <div>
@@ -23,7 +23,7 @@
             <div class="campoForm" id="mediosContacto">
                 <div>
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" maxlength="50" required />
+                    <input type="email" name="email" id="email" maxlength="40" required />
                 </div>
                 
                 <div>

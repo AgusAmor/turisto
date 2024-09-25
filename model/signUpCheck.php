@@ -12,7 +12,7 @@ $stmt->fetch();
 $stmt->close();
 
 if ($emailExists) {
-    echo "Este correo electrónico ya está registrado.";
+    header ("Location: /web-app-turisto/signUp?user=registedAlready");
 }else{
     echo "Usuario registrado con exito.";
     $pass = password_hash($_POST['pass'], PASSWORD_DEFAULT);

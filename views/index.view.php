@@ -106,8 +106,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -160,8 +160,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section class="bannerIndex">
@@ -217,8 +217,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -271,8 +271,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -301,8 +301,8 @@
                     <img src="https://placehold.co/200x100" alt="">
                 </div>
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
 

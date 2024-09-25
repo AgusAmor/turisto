@@ -3,11 +3,11 @@
 <section>
     <form action="model/logInCheck.php" method="post" class="formSesion">
         <img src="img/fondoForm.png" alt="">
-        <a href="/web-app-turisto/">&#10094</a>
+        <a href="/web-app-turisto/"><i class="bi bi-x"></i></a>
         <fieldset>
             <div class="campoForm">
                 <label for="user">Email</label>
-                <input type="email" name="user" id="user" required />
+                <input type="email" name="user" id="user" maxlength="40" pattern="[A-Za-z\s-@]+" required />
             </div>
             <div class="campoForm">
                 <label for="pass">Contraseña</label>

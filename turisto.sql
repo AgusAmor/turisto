@@ -3,7 +3,7 @@ use turisto;
 
 create table if not exists user(
 	id_user int not null auto_increment primary key,
-    email varchar(50) not null,
+    email varchar(40) not null,
     password varchar(60) not null,
     name varchar(25) not null, 
     surname varchar(25) not null,
