@@ -2,12 +2,12 @@
     <header id="header">
         <a href="/web-app-turisto/" class="logo"><img src="img/logo.png" alt="Inicio"></a>
         <div id="headerBar">
-            <nav class="navbar">
+            <!-- <nav class="navbar">
                 <li><a href="/web-app-turisto/">Inicio</a></li>
                 <li><a href="#">Sedes</a></li>
                 <li><a href="#">Paquetes de vuelos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-            </nav>
+            </nav> -->
             <div id="sesion_contenedor" >
             <?php
             if (isset($_SESSION['email'])){
