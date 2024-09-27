@@ -5,7 +5,7 @@
                 <h4>Contacto</h4>
                 <ul>
                     <li><i class="bi bi-phone-fill"></i> +54 9 11 6407-4689</li>
-                    <li><i class="bi bi-telephone-fill"></i> 4545-5555</li>
+                    <!-- <li><i class="bi bi-telephone-fill"></i> 4545-5555</li> -->
                     <li><i class="bi bi-envelope-at-fill"></i> administracion@turistosas.com</li>
                     <li><a href="https://maps.app.goo.gl/wmnxcf4apjKumQvk9" id="location" target="blank"><i class="bi bi-geo-alt-fill"></i> Maipú 225</a></li>
                 </ul>
@@ -14,8 +14,8 @@
                     <div>
                         <a href="https://www.instagram.com/turisto_ar/" target="blank"><i class="bi bi-instagram"></i></a>
                         <a href="https://api.whatsapp.com/message/SJ3EQTVAVVS3B1?autoload=1&app_absent=0" target="blank"><i class="bi bi-whatsapp"></i></a>
-                        <a href="" target="blank"><i class="bi bi-tiktok"></i></a>
-                        <a href="" target="blank"><i class="bi bi-facebook"></i></a>
+                        <!-- <a href="" target="blank"><i class="bi bi-tiktok"></i></a> -->
+                        <a href="https://www.facebook.com/people/Turisto-Travel/61565415403140" target="blank"><i class="bi bi-facebook"></i></a>
                     </div>
                 </div>
                 <div>

@@ -23,10 +23,6 @@ if (isset($_SESSION['id'])){
     // te lleva a la URL
     header ("Location: $url_whatsapp");
 
-
-
-
-
 }else{
     header ("Location: /web-app-turisto/?userNull=true");
     die();
