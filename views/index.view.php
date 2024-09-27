@@ -3,7 +3,7 @@
     <section>
         <div id="bannerForm">
             <img src="img/banner-index.png" alt="bannerIndex">
-            <form action="#" method="post" id="formIndex">
+            <form action="model/contactAssessor.php" method="get" id="formIndex">
                 <fieldset>
                     <legend>Busca tu destino *avion*</legend>
                     <div class="campoForm select">
