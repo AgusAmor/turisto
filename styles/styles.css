@@ -6,6 +6,10 @@
     list-style: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @font-face {
     font-family: 'myFonts';
     src: url('fonts/Brand.otf') format('otf'),
@@ -33,6 +37,10 @@ a:hover{
     text-decoration: none;
 }
 
+button{
+    outline: none;
+}
+
 h2, h3{
     font-size: 2rem;
     text-align: center;
@@ -44,11 +52,24 @@ h2, h3{
 
 /*HEADER*/
 header{
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
     align-content: center;
-    width: 100%;
     padding-top: 5px;
     height: 100px;
+    transition: background-color 0.3s, color 0.5s;
+    z-index: 1000;
+}
+
+header.scrolled {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+header.scrolled a{
+    color: rgb(238, 226, 206);
 }
 
 #headerBar{
@@ -60,14 +81,17 @@ header{
     width: 90%;
     display: flex;
     padding-left: 50%;
+    align-content: center;
 }
 
 .navbar a{
     color: rgb(6,129,145);
+    transition: color, font-size 0.1s linear;
 }
 
 .navbar a:hover{
     color: rgb(248,160,73);
+    font-size: 1.1rem;
 }
 
 #sesion_contenedor{
@@ -76,21 +100,24 @@ header{
     align-content: center;
     padding: 2%;
     gap: 10%;
+    margin-left: 80%;
 }
 
-#sesion_contenedor a{
+#sesion_contenedor a, button{
     border-radius: 20px;
     background-color: rgb(6,129,145);
     color: rgb(238,226,206);
+    border: none;
     padding: 3px;
     text-align: center;
     align-content: center;
+    transition: background-color,font-size 0.2s linear;
 }
 
-#sesion_contenedor a:hover{
+#sesion_contenedor a:hover, button:hover{
     background-color: rgb(248,160,73);
-    height: 50px;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 /**/
 
@@ -121,10 +148,11 @@ header{
     height: 450px;
 }
 
-#formIndex input{
+#formIndex input, .choices__inner{
     border-style: solid;
     border-color: rgba(0,0,0,0.1);
     border-radius: 10px;
+    transition: background-color 0.1s linear;
 }
 
 #formIndex input:hover, .choices__inner:hover{
@@ -144,12 +172,17 @@ header{
 
 .select label{
     width: 10%;
+    margin: 0px;
 }
 
 .select{
     display: flex;
-    align-items: flex-end;
     gap: 2%;
+}
+
+/*temporal hasta la api de aeropuertos*/
+.select{
+    justify-content: center;
 }
 
 .choices{
@@ -221,6 +254,7 @@ input[type="number"] {
     color: rgb(238,226,206);
     font-weight: bold;
     padding: 15px;
+    transition: color, font-size 0.2s linear;
 }
 
 #navIndex nav a:hover{
@@ -245,169 +279,22 @@ input[type="number"] {
 }
 /**/
 
-/*slider*/
-.slider-container {
-    position: relative;
-    width: auto;
-    max-width: 960px;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 10px;
-    display: flex;
-}
-
-.slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: auto;
-}
-
-.slide {
-    min-width: auto;
-    width: auto;
-    padding-right: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 2rem;
-    display: flex;
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    padding: 15px;
-    cursor: pointer;
-    font-size: 3rem;
-    color: rgb(248,160,73);
-}
-
-.prev:hover, .next:hover{
-    color: rgb(6, 129, 145);
-    font-size: 3.5rem;
-}
-
-.prev:focus, .next:focus {
-    outline: none;
-}
-  
-button.prev {
-    left: 10px;
-}
-  
-button.next {
-    right: 10px;
-}
-
-.card{
-    width: auto;
-    height: 300px;
-    border-radius: 20px;
-    background-color: rgb(155,207,205);
-    padding: 10px;
-    border-style: none;
-}
-
-.card img{
-    border-radius: 20px;
-}
-/**/
-
-
-/* LOGIN */
-.formSesion{
-    position: absolute;
-    border-radius: 30px;
-    overflow: hidden;
-    top: 30%;
-    left: 30%;
-    width: 40%;
-    height: 350px;
-    border-style: solid;
-    border-color: rgb(248, 160, 73);
-}
-
-.formSesion img{
-    width: 100%;
-    z-index: -1;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-}
-
-.formSesion fieldset{
-    padding: 60px;
-    display: grid;
-    gap: 2%;
-}
-
-.formSesion .campoForm{
-    width: 50%;
-    margin: auto 25%;
-    display: grid;
-    text-align: center;
-    align-content: center;
-}
-
-.formSesion #iniciarSesion{
-    margin: auto 35%;
-    width: 30%;
-    padding: 5px;
-    border-radius: 30px;
-}
-
-.formSesion a{
-    position: absolute;
-    font-size: 1.5rem;
-    margin: 2%;
-    text-align: center;
-    color: rgb(6, 129, 145);
-}
-
-.formSesion a:hover{
-    color: rgb(248, 160, 73);
-}
-
-.formSesion input{
-    border: rgb(248, 160, 73) solid;
-    border-radius: 15px;
-    text-align: center;
-}
-
-.formSesion input:hover{
-    background-color: rgb(248, 160, 73);
-}
-
-.redirectSesion{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-.redirectSesion p, #signUpRedirect, #logInRedirect{
-    font-size: 0.8rem;
-}
-
-
-/**/
-
 
 /* REGISTER */
+body.fondoForm {
+    font-family: 'myFonts', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(241 218 180);
+}
+
 .formRegistrarse{
     position: absolute;
     border-radius: 30px;
     overflow: hidden;
-    /* top: 5%;
-    left: 25%; */
+    top: 8%;
+    left: 25%;
     width: 50%;
     height: auto;
-    border-style: solid;
-    border-color: rgb(248, 160, 73);
 }
 
 .formRegistrarse img{
@@ -420,7 +307,7 @@ button.next {
 
 .formRegistrarse fieldset{
     display: grid;
-    padding: 20px;
+    padding: 30px;
 }
 
 .formRegistrarse .campoForm{
@@ -446,31 +333,105 @@ button.next {
     position: absolute;
     font-size: 1.5rem;
     margin: 2%;
-    color: rgb(6, 129, 145);
+    color: rgb(248, 160, 73);
+    font-weight: bold;
+    transition: font-size 0.1s linear;
 }
 
 .formRegistrarse a:hover{
-    color: rgb(248, 160, 73);
+    font-size: 2rem;
+    color: rgb(155,207,205);
 }
 
 .formRegistrarse input{
     border: rgb(248, 160, 73) solid;
     border-radius: 15px;
     padding: 5px;
+    width: 170px;
+    background-color: rgb(238, 226, 206)
 }
 
 .formRegistrarse input:hover{
     background-color: rgb(248, 160, 73);
+    transition: background-color 0.1s linear;
 }
 
-#terms{
+.formRegistrarse input:focus-visible{
+    border: solid rgb(155,207,205);
+    outline: none;
+    background-color: rgb(248, 160, 73);
+}
+
+#terminos{
     font-size: 1rem;
     margin: 0px;
     margin-left: 4px;
 }
 
-.formRegistrarse input{
-    right: 0px;
+#terms{
+    width: 15px;
+}
+
+#terminosContenedor{
+    width: 100%;
+    padding: 0px 15%;
+    margin: auto;
+}
+
+#terminosContenedor a{
+    color: rgb(0,0,0);
+    transition: color 0.1s linear;
+}
+
+#terminosContenedor a:hover{
+    color: rgb(155,207,205);
+}
+
+#nombreApellido, #mediosContacto{
+    justify-content: space-between;
+}
+
+#contrasenias{
+    text-align: center;
+    background-color: rgb(248, 160, 73, 0.2);
+    border-radius: 10px;
+}
+
+#contrasenias div{
+    display: grid;
+    align-content: center;
+    margin: auto;
+}
+
+#contrasenias input{
+    text-align: center;
+    margin: auto;
+}
+
+#name{
+    margin-left: 45px;
+}
+
+#email{
+    margin-left: 65px;
+}
+
+#nationality{
+    margin-left: 5px;
+}
+
+#registrarse{
+    transition: border 0.1s linear;
+}
+
+#registrarse:hover{
+    border: solid rgb(155,207,205);
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: rgb(248, 160, 73); /* Cambiar el color de la casilla y mantener la palomita */
+    border-radius: 3px;
 }
 
 /**/
@@ -486,6 +447,8 @@ footer{
 
 footer a{
     color: rgb(238, 226, 206);
+    font-weight: bold;
+    transition: color 0.2s linear;
 }
 
 footer a:hover{
@@ -517,6 +480,10 @@ footer h4,h5{
     display: flex;
     justify-content: space-between;
     gap: 1%;
+}
+
+#location{
+    font-weight: 100;
 }
 
 .redesFooter{

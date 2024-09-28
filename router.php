@@ -9,7 +9,6 @@ $routes = [
     '/web-app-turisto/' => 'controllers/index.php',
     
     //sesion
-    '/web-app-turisto/logIn' => 'controllers/sesion/logIn.php',
     '/web-app-turisto/signUp' => 'controllers/sesion/signUp.php',
 ];
 

@@ -3,41 +3,43 @@
     <section>
         <div id="bannerForm">
             <img src="img/banner-index.png" alt="bannerIndex">
-            <form action="#" method="post" id="formIndex">
+            <form action="model/contactAssessor.php" method="get" id="formIndex">
                 <fieldset>
                     <legend>Busca tu destino *avion*</legend>
                     <div class="campoForm select">
                         <label for="origen">Origen</label>
-                        <select name="origen" id="origen">
+                        <input type="text" name="origen" id="origen" required />
+                        <!-- <select name="origen" id="origen">
                             <option value="argentina">Argentina</option>
                             <option value="venezuela">Venezuela</option>
                             <option value="colombia">Colombia</option>
                             <option value="chile">Chile</option>
-                        </select>
+                        </select> -->
                     </div>
                     <div class="campoForm select">
                         <label for="destino">Destino</label>
-                        <select name="destino" id="destino">
+                        <input type="text" name="destino" id="destino" required />
+                        <!-- <select name="destino" id="destino">
                             <option value="argentina">Argentina</option>
                             <option value="venezuela">Venezuela</option>
                             <option value="colombia">Colombia</option>
                             <option value="chile">Chile</option>
-                        </select>
+                        </select> -->
                     </div>
                     <div class="campoForm">
                         <label for="ida">Fecha de salida</label>
-                        <input type="date" name="ida" id="ida">
+                        <input type="date" name="ida" id="ida" required />
                         <label for="vuelta">Fecha de retorno</label>
-                        <input type="date" name="vuelta" id="vuelta">
+                        <input type="date" name="vuelta" id="vuelta" required />
                     </div>
                     <div class="campoForm">
                         <caption>Pasajeros</caption>
                         <label for="adultos">Adultos:</label>
-                        <input type="number" name="adultos" id="adultos" min=0 step=1 placeholder=0>
+                        <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
                         <label for="ninios">Niños (<2 años):</label>
-                        <input type="number" name="ninios" id="ninios" min=0 step=1 placeholder=0>
+                        <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         <label for="mascotas">Mascotas:</label>
-                        <input type="number" name="mascotas" id="mascotas" min=0 step=1 placeholder=0>
+                        <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
                     </div>
                     <div class="botoneraForm">
                         <input type="submit" value="Hablar con mi asesor" >
@@ -106,8 +108,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -160,8 +162,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section class="bannerIndex">
@@ -217,8 +219,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -271,8 +273,8 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
     <section>
@@ -301,8 +303,8 @@
                     <img src="https://placehold.co/200x100" alt="">
                 </div>
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
 
