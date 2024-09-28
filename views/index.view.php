@@ -27,10 +27,20 @@
                         </select> -->
                     </div>
                     <div class="campoForm">
-                        <label for="ida">Fecha de salida</label>
-                        <input type="date" name="ida" id="ida" required />
-                        <label for="vuelta">Fecha de retorno</label>
-                        <input type="date" name="vuelta" id="vuelta" required />
+                        <div class="fechasNormal">
+                            <label for="ida">Fecha de salida</label>
+                            <input type="date" name="ida" id="ida" required />
+                            <label for="vuelta">Fecha de retorno</label>
+                            <input type="date" name="vuelta" id="vuelta" required />
+                        </div>
+                        <div class="contenedorFecha">
+                            <label for="ida">Fecha de salida</label>
+                            <input type="date" name="ida" id="ida" required />
+                        </div>
+                        <div class="contenedorFecha">
+                            <label for="vuelta">Fecha de retorno</label>
+                            <input type="date" name="vuelta" id="vuelta" required />
+                        </div>
                     </div>
                     <div class="campoForm">
                         <caption>Pasajeros</caption>
@@ -167,7 +177,7 @@
         </div>
     </section>
     <section class="bannerIndex">
-        <img src="https://placehold.co/1920x900" alt="">
+        <img src="https://placehold.co/1920x700" alt="">
     </section>
     <section>
         <h2 id="cruceros">Cruceros</h2>

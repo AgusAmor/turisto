@@ -1,0 +1,86 @@
+/* telefonos pequeños */
+@media (max-width: 480px) {
+
+}
+ 
+
+
+/* telefonos medianos */
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+
+
+/* tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+}
+  
+
+
+/* escritorios pequeños y laptops */
+@media (min-width: 1025px) and (max-width: 1324px) {
+    /* general */
+    body{
+        font-size: 0.8rem;
+    }
+    /**/
+
+    /* index */
+    #formIndex{
+        display: grid;
+    }
+
+    #formIndex .campoForm{
+        width: 100%;
+    }
+
+    .fechasNormal{
+        display: none;
+    }
+
+    .contenedorFecha{
+        display: block;
+    }
+    /**/
+}
+  
+
+
+/* laptops pequeñas */
+@media (min-width: 1325px) and (max-width: 1439px){
+    /* general */
+    body{
+        font-size: 0.9rem;
+    }
+    /**/
+
+    /* index */
+    #formIndex{
+        height: 400px;
+    }
+    /**/
+}
+
+
+
+/* pantallas mas grandes */
+@media (min-width: 1920px) {
+    /* header */
+    #sesion_contenedor{
+        width: 15%;
+        margin-left: 85%;
+    }
+
+    #headerBar{
+        width: 90%;
+    }
+    /**/
+
+    /* index */
+    #formIndex{
+        width: 35%;
+    }
+    /**/
+}

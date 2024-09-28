@@ -153,6 +153,7 @@ header.scrolled a{
     border-color: rgba(0,0,0,0.1);
     border-radius: 10px;
     transition: background-color 0.1s linear;
+    padding: 2px;
 }
 
 #formIndex input:hover, .choices__inner:hover{
@@ -168,6 +169,15 @@ header.scrolled a{
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
+    text-align: center;
+}
+
+.contenedorFecha{
+    display: none;
+}
+
+label{
+    align-content: center;
 }
 
 .select label{
@@ -264,7 +274,6 @@ input[type="number"] {
 
 .bannerIndex{
     width: 100%;
-    height: 700px;
     margin: 50px auto
 }
 
@@ -478,8 +487,7 @@ footer h4,h5{
 
 #contacto ul{
     display: flex;
-    justify-content: space-between;
-    gap: 1%;
+    gap: 5%;
 }
 
 #location{
@@ -498,4 +506,3 @@ footer h4,h5{
     font-size: 1.2rem;
 }
 /**/
-
