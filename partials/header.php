@@ -1,6 +1,7 @@
 <body>
     <header id="header">
         <a href="/web-app-turisto/" class="logo"><img src="img/logo.png" alt="Inicio"></a>
+        <button id="burger"><i class="bi bi-list"></i></button>
         <div id="headerBar">
             <!-- <nav class="navbar">
                 <li><a href="/web-app-turisto/">Inicio</a></li>
@@ -23,6 +24,7 @@
             ?>
             </div>
         </div>
+        
         <?php
         if(isset($_GET['user']) || isset($_GET['password']) || isset($_GET['banned']) || isset($_GET['email'])){
             echo "<div id=modalContainer class=open >";
@@ -50,3 +52,26 @@
             </form>
         </div>
     </header>
+    <div id="headerBarMobile">
+        <button id="closeNavBar"><i class="bi bi-x-lg"></i></button>
+            <nav class="navbar">
+                <li><a href="/web-app-turisto/">Inicio</a></li>
+                <li><a href="#">Sedes</a></li>
+                <li><a href="#">Paquetes de vuelos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </nav>
+            <div id="sesion_contenedor" >
+            <?php
+            if (isset($_SESSION['email'])){
+                echo "
+                    <a href=model/logOut.php>Cerrar sesión </a>
+                ";
+            }else{
+                echo "
+                    <button id=btn_iniciarSesion2 >Iniciar sesión </button>
+                    <a href=/web-app-turisto/signUp >Registrarse </a>
+                ";
+            }
+            ?>
+            </div>
+    </div>

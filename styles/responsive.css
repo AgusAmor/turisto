@@ -1,12 +1,12 @@
 /* telefonos pequeños */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 479px) {
 
 }
  
 
 
 /* telefonos medianos */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 767px) {
 
 }
 
@@ -14,7 +14,108 @@
 
 /* tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* general */
+    body{
+        font-size: 0.9rem;
+    }
+    /**/
+
+    /* header */
+    #burger{
+        display: block;
+        z-index: 2;
+    }
+
+    #closeNavBar{
+        position: absolute;
+        margin: 20px;
+        font-size: 1.5rem;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1000;
+    }
+
+    #headerBar{
+        display: none;
+    }
+
+    #headerBarMobile{
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        height: 50%;
+        z-index: 2;
+        border-bottom-left-radius: 15px;
+    }
+
+    #headerBarMobile.openNavBar{
+        display: grid;
+        animation: translate 0.5s;
+    }
+
+    @keyframes translate {
+        0%{
+            transform: translateX(100%);
+        }
     
+        100%{
+            transform: translateX(0%);
+        }
+        
+    }
+
+    #headerBarMobile #sesion_contenedor{
+        position: absolute;
+        bottom: 2%;
+        right: 25%;
+        width: 50%;
+    }
+
+    #headerBarMobile .navbar{
+        position: absolute;
+        top: 30%;
+        right: 17%;
+        text-align: center;
+        font-size: 1.5rem;
+        display: grid;
+        inline-size: max-content;
+        gap: 2%;
+    }
+
+    #headerBarMobile a{
+        color: rgb(238, 226, 206);
+    }
+    /**/
+
+    /* index */
+    #formIndex{
+        width: 90%;
+        left: 50%;
+        top: 35%;
+        height: 400px;
+    }
+
+    #navIndex{
+        width: 90%;
+    }
+
+    /**/
+
+    /* footer */
+    .navFooter{
+        left: 22%;
+    }
+
+    #contacto ul{
+        display: grid;
+    }
+
+
+    /**/
 }
   
 
@@ -30,6 +131,12 @@
     /* index */
     #formIndex{
         display: grid;
+        padding: 2% 0px;
+        height: auto;
+    }
+
+    #bannerForm {
+        height: 600px;
     }
 
     #formIndex .campoForm{

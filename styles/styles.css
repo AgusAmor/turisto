@@ -60,7 +60,7 @@ header{
     padding-top: 5px;
     height: 100px;
     transition: background-color 0.3s, color 0.5s;
-    z-index: 1000;
+    z-index: 1;
 }
 
 header.scrolled {
@@ -75,6 +75,10 @@ header.scrolled a{
 #headerBar{
     width: 80%;
     display: flex;
+}
+
+#headerBarMobile{
+    display: none;
 }
 
 .navbar{
@@ -118,6 +122,16 @@ header.scrolled a{
     background-color: rgb(248,160,73);
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+#burger{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(6, 129, 145);
+    font-size: 2rem;
+    outline: none;
+    position: relative;
+    left: 52%;
+    display: none;
 }
 /**/
 
