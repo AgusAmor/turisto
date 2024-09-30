@@ -243,15 +243,15 @@
         width: 50%;
     }
 
-    #headerBarMobile .navbar{
-        position: absolute;
-        top: 30%;
-        right: 17%;
+    .navbarMobile{
         text-align: center;
         font-size: 1.5rem;
         display: grid;
         inline-size: max-content;
         gap: 2%;
+        margin: auto;
+        height: 100%;
+        align-content: center;
     }
 
     #headerBarMobile a{
