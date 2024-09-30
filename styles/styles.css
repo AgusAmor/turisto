@@ -63,6 +63,10 @@ header{
     z-index: 1;
 }
 
+.logoMobile{
+    display: none; 
+}
+
 header.scrolled {
     position: fixed;
     background-color: rgba(0, 0, 0, 0.8);    
@@ -130,7 +134,6 @@ header.scrolled a{
     font-size: 2rem;
     outline: none;
     position: relative;
-    left: 52%;
     display: none;
 }
 /**/
@@ -184,6 +187,10 @@ header.scrolled a{
     margin-bottom: 10px;
     padding: 10px;
     text-align: center;
+}
+
+.pasajeros{
+    display: none;
 }
 
 .contenedorFecha{

@@ -1,6 +1,7 @@
 <body>
     <header id="header">
         <a href="/web-app-turisto/" class="logo"><img src="img/logo.png" alt="Inicio"></a>
+        <a href="/web-app-turisto/"><img src="img/logoMobile.png" class="logoMobile" alt="Inicio"></a>
         <button id="burger"><i class="bi bi-list"></i></button>
         <div id="headerBar">
             <!-- <nav class="navbar">
@@ -54,12 +55,14 @@
     </header>
     <div id="headerBarMobile">
         <button id="closeNavBar"><i class="bi bi-x-lg"></i></button>
-            <nav class="navbar">
-                <li><a href="/web-app-turisto/">Inicio</a></li>
-                <li><a href="#">Sedes</a></li>
-                <li><a href="#">Paquetes de vuelos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </nav>
+            <div class="navbarMobile">
+                <nav>
+                    <li><a href="/web-app-turisto/">Inicio</a></li>
+                    <li><a href="#">Sedes</a></li>
+                    <li><a href="#">Paquetes de vuelos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </nav>
+            </div>
             <div id="sesion_contenedor" >
             <?php
             if (isset($_SESSION['email'])){

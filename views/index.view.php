@@ -42,7 +42,7 @@
                             <input type="date" name="vuelta" id="vuelta" required />
                         </div>
                     </div>
-                    <div class="campoForm">
+                    <div class="campoForm pasajerosO">
                         <caption>Pasajeros</caption>
                         <label for="adultos">Adultos:</label>
                         <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
@@ -50,6 +50,21 @@
                         <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         <label for="mascotas">Mascotas:</label>
                         <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
+                    </div>
+                    <div class="campoForm pasajeros">
+                        <caption>Pasajeros</caption>
+                        <div>
+                            <label for="adultos">Adultos:</label>
+                            <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
+                        </div>
+                        <div>
+                            <label for="ninios">Niños (<2 años):</label>
+                            <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
+                        </div>
+                        <div>
+                            <label for="mascotas">Mascotas:</label>
+                            <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
+                        </div>
                     </div>
                     <div class="botoneraForm">
                         <input type="submit" value="Hablar con mi asesor" >
