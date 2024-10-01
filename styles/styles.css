@@ -464,7 +464,7 @@ body.fondoForm {
 
 input[type="checkbox"] {
     cursor: pointer;
-    accent-color: rgb(248, 160, 73); /* Cambiar el color de la casilla y mantener la palomita */
+    accent-color: rgb(248, 160, 73);
     border-radius: 3px;
 }
 

@@ -1,4 +1,4 @@
-/* telefonos */
+/* telefonos pequeños */
 @media (min-width: 320px) and (max-width: 767px) {
     /* general */
     body{
@@ -175,12 +175,87 @@
         left: 0px;
         margin-bottom: 20px;
     }
+    /**/
 
+    /* register */
+    .formRegistrarse{
+        border-radius: 10px;
+        width: 95%;
+        margin: 2.5%;
+        left: 0;
+        top: 0;
+    }
+
+    .formRegistrarse fieldset{
+        padding: 10px 0px;
+    }
+
+    .formRegistrarse input{
+        text-align: center;
+    }
+
+    #name, #email{
+        margin: 0px;
+    }
+
+    .formRegistrarse .campoForm{
+        display: grid;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    #nombreApellido, #mediosContacto{
+        justify-content: center;
+    }
+
+    #nombreApellido div, #mediosContacto div{
+        display: grid;
+        justify-content: center;
+    }
+
+    #contrasenias{
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+
+    #terminosContenedor{
+        font-size: 0.8rem;
+        display: flex;
+        position: absolute;
+        top: 79%;
+        justify-content: center;
+        padding: 0px;
+    }
+
+    #terminosContenedor label{
+        display: grid;
+        margin-left: 10px;
+    }
+
+    #terms{
+        width: 20px;
+    }
+
+    #terminos{
+        font-size: 0.8rem;
+        margin-top: 15px;
+        margin-left: 25px;
+    }
+
+    .formRegistrarse #registrarse{
+        width: auto;
+        margin: auto;
+    }
+
+    .redirectSesion a{
+        margin-top: 20px;
+    }
     /**/
 }
 
 
-/* tablets */
+/* telefonos */
 @media (min-width: 768px) and (max-width: 1024px) {
     /* header */
     header{
@@ -285,7 +360,7 @@
 }
 
 
-/* escritorios pequeños y laptops */
+/* tablets */
 @media (min-width: 1025px) and (max-width: 1324px) {
     /* general */
     body{
@@ -380,7 +455,7 @@
         gap: 23%;
     }
 
-    .campoForm{
+    .formRegistrarse .campoForm{
         margin-left: 1%;
     }
 
@@ -391,6 +466,5 @@
     #terminosContenedor{
         padding: 0px 25%;
     }
-
     /**/
 }

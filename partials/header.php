@@ -56,12 +56,12 @@
     <div id="headerBarMobile">
         <button id="closeNavBar"><i class="bi bi-x-lg"></i></button>
             <div class="navbarMobile">
-                <nav>
+                <!-- <nav>
                     <li><a href="/web-app-turisto/">Inicio</a></li>
                     <li><a href="#">Sedes</a></li>
                     <li><a href="#">Paquetes de vuelos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                </nav>
+                </nav> -->
             </div>
             <div id="sesion_contenedor" >
             <?php
