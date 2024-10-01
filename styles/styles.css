@@ -146,6 +146,10 @@ header.scrolled a{
     height: 650px;
 }
 
+#avion{
+    height: 24px;
+}
+
 #bannerForm img{
     width: 100%;
     height: 100%;

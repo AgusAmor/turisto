@@ -357,4 +357,40 @@
         width: 35%;
     }
     /**/
+
+    /* register */
+    #name{
+        margin-left: 52px;
+    }
+
+    #email{
+        margin-left: 73px;
+    }
+
+    #phone{
+        margin-left: 15px;
+    }
+
+    #surname{
+        margin-left: 20px;
+    }
+
+    #nombreApellido, #mediosContacto {
+        justify-content: left;
+        gap: 23%;
+    }
+
+    .campoForm{
+        margin-left: 1%;
+    }
+
+    #contrasenias{
+        margin-left: 0px;
+    }
+
+    #terminosContenedor{
+        padding: 0px 25%;
+    }
+
+    /**/
 }

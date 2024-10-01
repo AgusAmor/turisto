@@ -13,4 +13,4 @@ create table if not exists user(
     banned boolean not null
 );
 
-insert into user values(1, 'user0@mail', '123qwe', 'Jorge', 'Paz', 'Ecuatoriano', 1122334455, 'usuario', false);
+insert into user values(1, 'sistema@turistosas.com', '$2y$10$1hjlIzcoyW0AxnT.4xPKmuqPUFbzx4bRbcM4udATCn3yA6iYbgeCS', 'Agustin', 'Amor', 'Argentina', 1157731233, 'admin', false);
