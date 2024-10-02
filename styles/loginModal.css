@@ -1,7 +1,7 @@
 /* modal */
 #modalContainer{
     position: fixed;
-    z-index: 1;
+    z-index: 20000;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -77,19 +77,21 @@
 
 #btn_cerrarModal{
     position: absolute;
+    padding: 0px 5px;
     font-size: 1.5rem;
     margin: 2%;
     text-align: center;
     color: rgb(248, 160, 73);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgb(6, 129, 145, 0.5);
+    border-radius: 15px;
     outline: none;
-    transition: color,font-size 0.1s linear;
+    transition: color,border-radius 0.1s linear;
     cursor: pointer;
 }
 
 #btn_cerrarModal:hover{
     color: rgb(155,207,205);
-    font-size: 2rem;
+    border-radius: 5px;
 }
 
 .formSesion a{
@@ -129,6 +131,16 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+}
+
+#signUpRedirect{
+    background-color: rgb(6, 129, 145, 0.5);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#signUpRedirect:hover{
+    border-radius: 5px;
 }
 
 .redirectSesion p, #signUpRedirect, #logInRedirect{

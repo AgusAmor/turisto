@@ -232,11 +232,40 @@
         margin-top: 20px;
     }
     /**/
+
+    /* modal login */
+    .formSesion{
+        width: 90%;
+        left: 5%;
+    }
+
+    .formSesion .campoForm{
+        position: relative;
+        left: 20%;
+        margin: 0px;
+        width: 60%;
+    }
+
+    #iniciarSesion{
+        margin: 0px;
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
+
+
+    /**/
 }
 
 
 /* telefonos */
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* general */
+    body{
+        font-size: 0.9rem;
+    }
+    /**/
+
     /* header */
     header{
         justify-content: space-between;
@@ -335,6 +364,15 @@
     }
     /**/
 
+    /* modal login */
+    .formSesion{
+        width: 70%;
+        left: 15%;
+    }
+
+
+    /**/
+
     /* footer */
     .navFooter{
         left: 20%;
@@ -351,7 +389,7 @@
 @media (min-width: 1025px) and (max-width: 1324px) {
     /* general */
     body{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     /**/
 
@@ -388,19 +426,19 @@
         width: 70%;
         left: 15%;
     }
+    /**/
 
+    /* modal login */
+    .formSesion{
+        width: 60%;
+        left: 20%;
+    }
     /**/
 }
 
 
 /* laptops pequeñas */
 @media (min-width: 1325px) and (max-width: 1439px){
-    /* general */
-    body{
-        font-size: 0.9rem;
-    }
-    /**/
-
     /* index */
     #formIndex{
         height: 400px;
