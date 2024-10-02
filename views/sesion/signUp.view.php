@@ -22,14 +22,27 @@
                 <input type="text" name="nationality" id="nationality" maxlength="25" pattern="[A-Za-z\s]+" required />
             </div>
             <div class="campoForm" id="mediosContacto">
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" maxlength="40" required />
-                </div>
-                
+                <?php
+                    if(isset($_GET['user'])){
+                        echo "
+                        <div class=yaRegistrado>
+                            <label for=email>Email</label>
+                            <input type=email name=email id=email maxlength=40 required />
+                            <p>Este usuario ya esta registrado.</p>
+                        </div>
+                            ";
+                    }else{
+                    echo "
+                        <div class=>
+                            <label for=email>Email</label>
+                            <input type=email name=email id=email maxlength=40 required />
+                        </div>
+                    ";
+                    }
+                ?>
                 <div>
                     <label for="phone">Telefono</label>
-                    <input type="text" name="phone" id="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12)" />
+                    <input type="text" name="phone" id="phone" oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 12)" required />
                 </div>
             </div>
             <div class="campoForm" id="contrasenias">
@@ -51,7 +64,7 @@
                 <input type="submit" value="Registrarse" id="registrarse">
             </div>
             <div class="redirectSesion">
-                <p>¿Ya eres parte de Turisto? </p><a href="/web-app-turisto/?user=registed" id="logInRedirect" >Inicia Sesión</a>
+                <p>¿Ya eres parte de Turisto? </p><a href="/web-app-turisto/?user=user" id="logInRedirect" >Inicia Sesión</a>
             </div>
         </fieldset>
     </form>

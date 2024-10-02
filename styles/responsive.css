@@ -231,6 +231,12 @@
     .redirectSesion a{
         margin-top: 20px;
     }
+
+    .yaRegistrado p{
+        top: 10%;
+        left: 2%;
+    }
+
     /**/
 
     /* modal login */
@@ -245,9 +251,9 @@
 
     .formSesion .campoForm{
         position: relative;
-        left: 20%;
+        left: 15%;
         margin: 0px;
-        width: 60%;
+        width: 70%;
     }
 
     #iniciarSesion{
@@ -257,7 +263,11 @@
         left: 25%;
     }
 
-
+    #errorMessage{
+        top: 60%;
+        width: 80%;
+        left: 10%;
+    }
     /**/
 }
 

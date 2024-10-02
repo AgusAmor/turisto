@@ -495,6 +495,17 @@ input[type="checkbox"] {
     border-radius: 3px;
 }
 
+.yaRegistrado input{
+    border: solid red;
+}
+
+.yaRegistrado p{
+    font-size: 0.7rem;
+    position: relative;
+    left: 20%;
+    top: -30%;
+}
+
 /**/
 
 

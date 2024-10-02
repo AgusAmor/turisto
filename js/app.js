@@ -48,18 +48,26 @@ if(closeNavBar){
 
 
 // VALIDACION CONTRASEÑA
-var pass = document.getElementById('pass');
-var pass2 = document.getElementById('pass2');
+document.getElementById('formRegistrarseCheckPass').onsubmit = function(event) {
+  var pass = document.getElementById('pass');
+  var pass2 = document.getElementById('pass2');
+  
+  var registrarse = document.getElementById('registrarse');
+  var formRegistrarseCheckPass = document.getElementById('formRegistrarseCheckPass');
+  
+  // Primero, permite la validación nativa de HTML5
+  if (!this.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+      this.reportValidity(); // Muestra los mensajes de error del navegador
+      return false;
+  }
 
-var registrarse = document.getElementById('registrarse');
-var formRegistrarseCheckPass = document.getElementById('formRegistrarseCheckPass');
-
-registrarse.onclick = function(event) {
-    event.preventDefault();
-    if (pass.value !== pass2.value) {
-        alert("Las contraseñas no coinciden");
-    } else {
-        formRegistrarseCheckPass.action = "model/signUpCheck.php";
-        formRegistrarseCheckPass.submit();
-    }
-}
+  // Luego, valida que las contraseñas sean iguales
+  if (pass.value !== pass2.value) {
+    alert("Las contraseñas no coinciden");
+  } else {
+    formRegistrarseCheckPass.action = "model/signUpCheck.php";
+    formRegistrarseCheckPass.submit();
+  }
+};

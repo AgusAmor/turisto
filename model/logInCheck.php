@@ -32,7 +32,6 @@ if ($hashedPassword) {
                 $_SESSION['access'] = $access;
                 $_SESSION['banned'] = $banned;
                 header("Location: /web-app-turisto/");
-                ini_set('session.gc_maxlifetime', 300); // 5 minutos
             }
         }
     } else {
