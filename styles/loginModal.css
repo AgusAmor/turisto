@@ -134,6 +134,6 @@
 .redirectSesion p, #signUpRedirect, #logInRedirect{
     font-size: 0.8rem;
     font-weight: bold;
-    transition: color 0.1s linear;
+    transition: color,border-radius 0.1s linear;
 }
 /**/

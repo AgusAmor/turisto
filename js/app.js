@@ -37,13 +37,11 @@ var headerBarMobile = document.getElementById('headerBarMobile');
 if(burger){
   burger.onclick = function() {
     headerBarMobile.classList.add('openNavBar');
-    burger.style.display="none";
   };
 }
 
 if(closeNavBar){
   closeNavBar.onclick = function() {
     headerBarMobile.classList.remove('openNavBar');
-    burger.style.display="block";
 };
 }
