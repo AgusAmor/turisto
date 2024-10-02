@@ -45,3 +45,21 @@ if(closeNavBar){
     headerBarMobile.classList.remove('openNavBar');
 };
 }
+
+
+// VALIDACION CONTRASEÑA
+var pass = document.getElementById('pass');
+var pass2 = document.getElementById('pass2');
+
+var registrarse = document.getElementById('registrarse');
+var formRegistrarseCheckPass = document.getElementById('formRegistrarseCheckPass');
+
+registrarse.onclick = function(event) {
+    event.preventDefault();
+    if (pass.value !== pass2.value) {
+        alert("Las contraseñas no coinciden");
+    } else {
+        formRegistrarseCheckPass.action = "model/signUpCheck.php";
+        formRegistrarseCheckPass.submit();
+    }
+}

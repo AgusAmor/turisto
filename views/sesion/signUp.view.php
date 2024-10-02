@@ -1,7 +1,8 @@
+<?php ?>
 <body class="<?php echo isset($data['bodyClass']) ? $data['bodyClass'] : ''; ?>">
 <main>
 <section>
-    <form action="model/signUpCheck.php" method="post" class="formRegistrarse">
+    <form action="" method="post" class="formRegistrarse" id="formRegistrarseCheckPass">
         <img src="img/fondoForm.png" alt="fondoForm">
         <a href="/web-app-turisto/" id="volver"><i class="bi bi-chevron-left"></i></i></a>
         <fieldset>
@@ -57,3 +58,6 @@
 </section>
 </main>
 </body>
+<footer>
+    <script src="js/app.js"></script>
+</footer>

@@ -234,6 +234,10 @@
     /**/
 
     /* modal login */
+    #modalContainer{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
     .formSesion{
         width: 90%;
         left: 5%;
