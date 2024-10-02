@@ -51,6 +51,23 @@
                     </div>
                 </fieldset>
             </form>
+            <p id="errorMessage">
+            <?php
+                if(isset($_GET['user'])){
+                    if($_GET['user'] == 'banned'){
+                        echo "El usuario con el que intenta ingresar tiene denegado el acceso a nuestro sitio. Por favor comuníquese con un administrador.";
+                    }else if($_GET['user'] == 'registed'){
+                        echo "Ya puede iniciar sesión.";
+                    }else if($_GET['user'] == 'userNotFound'){
+                        echo "El email con el que intenta ingresar no esta registrado.";
+                    }
+                }else if(isset($_GET['password'])){
+                    if($_GET['password'] == 'wrongPassword'){
+                        echo "La contraseña con la que intenta ingresar es incorrecta.";
+                    }
+                }
+            ?>
+            </p>
         </div>
     </header>
     <div id="headerBarMobile">

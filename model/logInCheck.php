@@ -21,7 +21,7 @@ if ($hashedPassword) {
     if (password_verify($pass, $hashedPassword)) {
         if ($access == 'usuario'){
             if ($banned == '1'){
-                header("Location: /web-app-turisto/?banned=youAreBanned");
+                header("Location: /web-app-turisto/?user=banned");
             }else{
                 $_SESSION['id'] = $id;
                 $_SESSION['email'] = $email;
@@ -39,6 +39,6 @@ if ($hashedPassword) {
         header("Location: /web-app-turisto/?password=wrongPassword");
     }
 }else {
-    header("Location: /web-app-turisto/?email=emailNotFound");
+    header("Location: /web-app-turisto/?user=userNotFound");
 }
 ?>

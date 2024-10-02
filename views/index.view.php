@@ -46,7 +46,7 @@
                         <caption>Pasajeros</caption>
                         <label for="adultos">Adultos:</label>
                         <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
-                        <label for="ninios">Niños (<2 años):</label>
+                        <label for="ninios">Niños<span title="Menores de 2 años">?</span>: </label>
                         <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         <label for="mascotas">Mascotas:</label>
                         <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
@@ -58,7 +58,7 @@
                             <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
                         </div>
                         <div>
-                            <label for="ninios">Niños (<2 años):</label>
+                            <label for="ninios">Niños<span title="Menores de 2 años">?</span>: </label>
                             <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         </div>
                         <div>
