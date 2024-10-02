@@ -26,10 +26,10 @@
         <div class="navFooter">
             <nav>
                 <li><a href="/web-app-turisto/#bannerForm">Inicio</a></li>
-                <li><a href="/web-app-turisto/#nacionales">Vuelos Nacionales</a></li>
-                <li><a href="/web-app-turisto/#internacionales">Vuelos Internacionales</a></li>
-                <li><a href="/web-app-turisto/#cruceros">Cruceros</a></li>
                 <li><a href="/web-app-turisto/#paquetes">Paquetes</a></li>
+                <li><a href="/web-app-turisto/#cruceros">Cruceros</a></li>
+                <li><a href="/web-app-turisto/#internacionales">Vuelos Internacionales</a></li>
+                <li><a href="/web-app-turisto/#nacionales">Vuelos Nacionales</a></li>
             </nav>
         </div>
     </div>

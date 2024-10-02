@@ -76,15 +76,15 @@
 
     <div id="navIndex">
         <nav>
-            <li><a href="#nacionales">Vuelos Nacionales</a></li>
-            <li><a href="#internacionales">Vuelos Internacionales</a></li>
-            <li><a href="#cruceros">Cruceros</a></li>
             <li><a href="#paquetes">Paquetes</a></li>
+            <li><a href="#cruceros">Cruceros</a></li>
+            <li><a href="#internacionales">Vuelos Internacionales</a></li>
+            <li><a href="#nacionales">Vuelos Nacionales</a></li>
         </nav>
     </div>
 
     <section>
-        <h2 id="nacionales">Vuelos nacionales</h2>
+        <h2 id="paquetes">Paquetes</h2>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
@@ -138,7 +138,7 @@
         </div>
     </section>
     <section>
-        <h2 id="internacionales">Vuelos internacionales</h2>
+        <h2 id="cruceros">Cruceros</h2>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
@@ -195,7 +195,7 @@
         <img src="https://placehold.co/1920x700" alt="">
     </section>
     <section>
-        <h2 id="cruceros">Cruceros</h2>
+        <h2 id="internacionales">Vuelos Internacionales</h2>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
@@ -249,7 +249,7 @@
         </div>
     </section>
     <section>
-        <h2 id="paquetes">Paquetes</h2>
+        <h2 id="nacionales">Vuelos Nacionales</h2>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
