@@ -1,60 +1,27 @@
+const slider = document.querySelector('.slider');
+    let currentIndex = 0;
+    const totalSlides = 8;
+    const slidesToShow = 4;
+    const slideWidth = 240;
 
-// SLIDER
-function initSlider(sliderContainer) {
-    const slider = sliderContainer.querySelector('.slider');
-    const slides = slider.querySelectorAll('.slide');
-    let slideIndex = 0;
-    const slidesVisible = 3;
-    const totalGroups = Math.ceil(slides.length / slidesVisible);
-  
-    let autoSlide;
-  
-    // Función para mover el slider
-    function moverSlide(n) {
-      slideIndex += n;
-  
-      if (slideIndex < 0) {
-        slideIndex = totalGroups;
-      }
-  
-      if (slideIndex >= totalGroups) {
-        slideIndex = 0;
-      }
-  
-      const offset = -slideIndex * 100 / slidesVisible;
-      slider.style.transform = `translateX(${offset}%)`;
+    function moveSlides() {
+        // Si aún no llegamos al final, movemos a la siguiente diapositiva
+        if (currentIndex < totalSlides - slidesToShow) {
+          slider.style.transition = 'transform 0.5s ease';
+          currentIndex++;
+        } else {
+          // Si llegamos al final, volvemos rápidamente al inicio
+          slider.style.transition = 'transform 1s ease'; // Eliminar la transición temporalmente
+          currentIndex = 0; // Reseteamos al primer slide
+          slider.style.transform = `translateX(0px)`; // Volvemos instantáneamente al inicio
+          setTimeout(() => {
+          slider.style.transition = 'transform 0.5s ease'; // Restaurar la transición
+          }, 20); // Pequeña demora para permitir el reinicio visual
+        }
+
+        // Movemos las diapositivas a la siguiente posición
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
-  
-    // Iniciar deslizamiento automático
-    function startAutoSlide() {
-      autoSlide = setInterval(() => moverSlide(1), 5000);
-    }
-  
-    // Detener deslizamiento automático
-    function stopAutoSlide() {
-      clearInterval(autoSlide);
-    }
-  
-    // Manejar botones prev y next
-    const prevButton = sliderContainer.querySelector('.prev');
-    const nextButton = sliderContainer.querySelector('.next');
-  
-    prevButton.addEventListener('click', () => {
-      stopAutoSlide();
-      moverSlide(-1);
-      startAutoSlide();
-    });
-  
-    nextButton.addEventListener('click', () => {
-      stopAutoSlide();
-      moverSlide(1);
-      startAutoSlide();
-    });
-  
-    // Inicia el deslizamiento automático al cargar
-    startAutoSlide();
-  }
-  
-  // Inicia todos los sliders
-  document.querySelectorAll('.slider-container').forEach(initSlider);
-  
+
+    // Deslizamos las diapositivas cada 2 segundos
+    setInterval(moveSlides, 5000);

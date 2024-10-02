@@ -110,11 +110,7 @@
                 <div class="slide">
                     <div class="card">
                         <img src="https://placehold.co/200x200" alt="">
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        miguel
                     </div>
                 </div>
                 <div class="slide">
@@ -141,11 +137,6 @@
         <h2 id="cruceros">Cruceros</h2>
         <div class="slider-container">
             <div class="slider">
-                <div class="slide">
-                    <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
-                    </div>
-                </div>
                 <div class="slide">
                     <div class="card">
                         <img src="https://placehold.co/200x200" alt="">
