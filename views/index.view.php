@@ -83,8 +83,12 @@
         </nav>
     </div>
 
-    <section>
+    <section class="sectionSlides">
         <h2 id="paquetes">Paquetes</h2>
+        <div class="btn_slides">
+            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
+            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
+        </div>
         <div class="slider-container">
             <div class="slider">
                 <div class="slide">
@@ -129,11 +133,9 @@
                     </div>
                 </div>
             </div>
-            <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
-            <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
-    <section>
+    <section class="sectionSlides">
         <h2 id="cruceros">Cruceros</h2>
         <div class="slider-container">
             <div class="slider">
@@ -185,7 +187,7 @@
     <section class="bannerIndex">
         <img src="https://placehold.co/1920x700" alt="">
     </section>
-    <section>
+    <section class="sectionSlides">
         <h2 id="internacionales">Vuelos Internacionales</h2>
         <div class="slider-container">
             <div class="slider">
@@ -239,7 +241,7 @@
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
-    <section>
+    <section class="sectionSlides">
         <h2 id="nacionales">Vuelos Nacionales</h2>
         <div class="slider-container">
             <div class="slider">
@@ -293,7 +295,7 @@
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
         </div>
     </section>
-    <section>
+    <section class="sectionSlides">
         <h3 >Aliados comerciales</h3>
         <div class="slider-container">
             <div class="slider">

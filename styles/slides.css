@@ -1,39 +1,22 @@
 /*slider*/
 .slider-container {
-    /* position: relative;
-    width: 100%;
-    max-width: 960px;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: 10px;
-    display: flex; */
+    display: flex;
     width: 960px;
     height: auto;
     margin: 0px auto;
     overflow: hidden;
     margin-bottom: 100px;
-
 }
 
 .slider {
-    /* display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: auto; */
     display: flex;
     width: auto;
 }
 
 .slide {
-    /* min-width: auto;
-    width: auto;
-    padding-right: 20px;
-    box-sizing: border-box;
-    font-size: 2rem;
-    */
     padding: 10px;
     text-align: center;
-    display: flex; 
+    display: flex;
 }
 
 .card{
@@ -49,10 +32,20 @@
     border-radius: 20px;
 }
 
-.prev, .next {
+.sectionSlides{
+    position: relative;
+}
+
+.btn_slides{
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    height: 100%;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0px 10%;
+    display: flex;
+}
+
+.prev, .next {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     padding: 15px;
@@ -70,13 +63,5 @@
 
 .prev:focus, .next:focus {
     outline: none;
-}
-  
-button.prev {
-    left: 10px;
-}
-  
-button.next {
-    right: 10px;
 }
 /**/
