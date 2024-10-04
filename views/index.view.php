@@ -29,17 +29,17 @@
                     <div class="campoForm">
                         <div class="fechasNormal">
                             <label for="ida">Fecha de salida</label>
-                            <input type="date" name="ida" id="ida" required />
+                            <input type="date" name="ida" id="ida" onkeydown="return false;" onclick="this.showPicker();" required />
                             <label for="vuelta">Fecha de retorno</label>
-                            <input type="date" name="vuelta" id="vuelta" required />
+                            <input type="date" name="vuelta" id="vuelta" onkeydown="return false;" onclick="this.showPicker();" required />
                         </div>
                         <div class="contenedorFecha">
                             <label for="ida">Fecha de salida</label>
-                            <input type="date" name="ida" id="ida" required />
+                            <input type="date" name="ida" id="ida" onkeydown="return false;" onclick="this.showPicker();" required />
                         </div>
                         <div class="contenedorFecha">
                             <label for="vuelta">Fecha de retorno</label>
-                            <input type="date" name="vuelta" id="vuelta" required />
+                            <input type="date" name="vuelta" id="vuelta" onkeydown="return false;" onclick="this.showPicker();" required />
                         </div>
                     </div>
                     <div class="campoForm pasajerosO">
