@@ -46,7 +46,8 @@
                         <caption>Pasajeros</caption>
                         <label for="adultos">Adultos:</label>
                         <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
-                        <label for="ninios">Niños<span title="Menores de 2 años">?</span>: </label>
+                        <label for="ninios">Niños: </label>
+                        <span class="niniosSpan" title="Menores de 2 años">?</span>
                         <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         <label for="mascotas">Mascotas:</label>
                         <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
@@ -58,7 +59,8 @@
                             <input type="number" name="adultos" id="adultos" min=0 max=10 step=1 placeholder=0>
                         </div>
                         <div>
-                            <label for="ninios">Niños<span title="Menores de 2 años">?</span>: </label>
+                            <label for="ninios">Niños: </label>
+                            <span class="niniosSpan" title="Menores de 2 años">?</span>
                             <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
                         </div>
                         <div>
@@ -198,42 +200,50 @@
         <div class="slider">
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/aruba.jpg" alt="aruba">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/barcelona.jpg" alt="barcelona">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/madrid.jpg" alt="madrid">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/mexico.jpg" alt="mexico">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/paris.jpg" alt="paris">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/portugal.jpg" alt="portugal">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/rio.jpg" alt="rio">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/internacionales/roma.jpg" alt="roma">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
             </div>
@@ -249,22 +259,26 @@
         <div class="slider">
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/nacionales-argentina/bariloche.jpg" alt="bariloche">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/nacionales-argentina/iguazu.jpg" alt="iguazu">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/nacionales-argentina/mendoza.jpg" alt="mendoza">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
-                        <img src="https://placehold.co/200x200" alt="">
+                        <img src="img/nacionales-argentina/salta.jpg" alt="salta">
+                        <button>Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">

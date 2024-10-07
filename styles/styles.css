@@ -197,6 +197,14 @@ header.scrolled a{
     display: none;
 }
 
+.niniosSpan{
+    cursor: pointer;
+}
+
+.niniosSpan:hover{
+    color: rgb(248, 160, 73);
+}
+
 .contenedorFecha{
     display: none;
 }
