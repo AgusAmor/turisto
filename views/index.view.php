@@ -201,49 +201,49 @@
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/aruba.jpg" alt="aruba">
-                        <button class="btn_package">Ver mas...</button>
+                        <button class="btn_package" data-id_package="1">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/barcelona.jpg" alt="barcelona">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="2">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/madrid.jpg" alt="madrid">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="3">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/mexico.jpg" alt="mexico">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="4">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/paris.jpg" alt="paris">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="5">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/portugal.jpg" alt="portugal">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="6">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/rio.jpg" alt="rio">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="7">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/roma.jpg" alt="roma">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="8">Ver mas...</button>
                     </div>
                 </div>
             </div>

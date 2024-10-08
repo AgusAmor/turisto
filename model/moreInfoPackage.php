@@ -11,7 +11,11 @@ if(isset($_GET['id_package'])){
     $stmt->fetch();
     $stmt->close();
 
-    header ("Location: /web-app-turisto/?dsadasd");
+    if($stmt){
+        header ("Location: /web-app-turisto/?id=$id_package&country=$country&city=$city&passengers=$passengers&description=$description&image=$image&trasfer=$transfer&luggage=$luggage&lodging=$lodging");
+    }else{
+        echo "error";
+    }
 }
 
 
