@@ -201,7 +201,7 @@
                 <div class="slide">
                     <div class="card">
                         <img src="img/internacionales/aruba.jpg" alt="aruba">
-                        <button>Ver mas...</button>
+                        <a href="model/moreInfoPackage.php">Ver mas...</a>
                     </div>
                 </div>
                 <div class="slide">

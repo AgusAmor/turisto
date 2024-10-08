@@ -159,20 +159,5 @@
     padding: 10px;
     border-radius: 20px;
     align-content: center;
-    animation: errorMessage reverse infinite 2.5s;
-}
-
-@keyframes errorMessage {
-    0%{
-        border: solid 2px rgb(255,0,0);
-    }
-    
-    50%{
-        border: solid 2px rgb(0,0,0,0);
-    }
-    
-    100%{
-        border: solid 2px rgb(255,0,0);
-    }
 }
 /**/

@@ -20,7 +20,7 @@ if ($emailExists) {
     $surname = $con->real_escape_string($_POST['surname']);
     $nationality = $con->real_escape_string($_POST['nationality']);
     $phone = $_POST['phone'];
-    $access = 'usuario';
+    $access = 1;
     $banned = false;
 
     $name = $con->real_escape_string($_POST['name']);

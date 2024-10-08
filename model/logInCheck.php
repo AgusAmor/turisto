@@ -19,7 +19,7 @@
 
 if ($hashedPassword) {
     if (password_verify($pass, $hashedPassword)) {
-        if ($access == 'usuario'){
+        if ($access == 1){
             if ($banned == '1'){
                 header("Location: /web-app-turisto/?user=banned");
             }else{

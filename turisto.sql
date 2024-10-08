@@ -9,8 +9,29 @@ create table if not exists user(
     surname varchar(25) not null,
     nationality varchar(25),
     phone varchar(20),
-    access varchar(10) not null,
-    banned boolean not null
+    access int not null,
+    banned boolean not null,
+    foreign Key (access) references user_type (id_user_type)
 );
 
-insert into user values(1, 'sistema@turistosas.com', '$2y$10$1hjlIzcoyW0AxnT.4xPKmuqPUFbzx4bRbcM4udATCn3yA6iYbgeCS', 'Agustin', 'Amor', 'Argentina', 1157731233, 'admin', false);
+create table if not exists user_type(
+    id_user_type int not null auto_increment primary key,
+    type varchar(15) not null
+);
+
+create table if not exists package(
+    id_package int not null auto_increment primary key,
+    country_destination varchar(50) not null,
+    city_destination varchar(100),
+    passengers int(2) not null,
+    transfer boolean default false,
+    luggage varchar(10),
+    lodging boolean default false
+);
+
+
+insert into user_type (type)
+values
+    ('usuario'),
+    ('asesor'),
+    ('administrador');
