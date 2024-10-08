@@ -54,3 +54,11 @@ function startAutoSlide() {
 }
 
 startAutoSlide();
+
+
+
+if (btn_cerrarModalPackage) {
+    btn_cerrarModalPackage.onclick = function() {
+        modalPackageContainer.classList.remove('open');
+    };
+}

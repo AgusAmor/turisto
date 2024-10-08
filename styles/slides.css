@@ -89,6 +89,74 @@
 /**/
 
 /* modal */
+#modalPackageContainer{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    animation: displayModal 0.5s;
+}
 
+#modalPackageContainer.open{
+    display: block;
+    animation: displayModal 0.5s;
+}
+
+@keyframes displayModal {
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+#modalPackage{
+    background-color: rgba(255, 255, 255, 0.884);
+    border-bottom-right-radius: 15px;
+    width: 40%;
+    height: 100%;
+}
+
+#modalPackage img{
+    object-fit: cover;
+    width: 100%;
+    height: 40%;
+}
+
+#modalPackage div{
+    height: auto;
+    top: 30%;
+    bottom: 0%;
+    background: 
+    linear-gradient(to top, rgb(255, 255, 255) 85%, rgb(0, 0, 0, 0) 100%);
+    border-bottom-right-radius: 15px;
+    width: 40%;
+    position: absolute;
+    text-align: center;
+}
+
+#btn_cerrarModalPackage{
+    position: absolute;
+    margin: 5px;
+    background-color: rgb(0, 0, 0, 0);
+    font-size: 2rem;
+    color: rgb(248,160,73);
+    transition: all 0.1s linear;
+}
+
+#btn_cerrarModalPackage:hover{
+    font-size: 2.2rem;
+    color: rgb(6, 129, 145);
+}
+
+#btn_cerrarModalPackage:focus{
+    outline: none;
+}
 
 /**/

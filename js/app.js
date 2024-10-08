@@ -1,3 +1,26 @@
+// GUARDAR EL SCROLL
+// Guarda la posición del scroll antes de redirigir
+document.querySelectorAll('.btn_package').forEach(button => {
+  button.addEventListener('click', function() {
+      // Obtiene el valor de 'data-id_package' del botón que fue clicado
+      const idPackage = this.getAttribute('data-id_package');
+      // Guarda la posición del scroll en localStorage
+      localStorage.setItem('scrollPosition', window.scrollY);
+      
+      // Redirige a la URL con el id_package dinámico
+      window.location.href = "model/moreInfoPackage.php?id_package=" + idPackage;
+  });
+});
+
+// Restaura la posición del scroll cuando la página se carga
+window.addEventListener('load', function() {
+  const scrollPosition = localStorage.getItem('scrollPosition');
+  if (scrollPosition) {
+      window.scrollTo(0, scrollPosition);
+  }
+});
+
+
 // SELECT FORM
 // document.addEventListener('DOMContentLoaded', function () {
 //     const elemento = document.getElementById('origen');
@@ -45,30 +68,6 @@ if(closeNavBar){
     headerBarMobile.classList.remove('openNavBar');
 };
 }
-
-// GUARDAR EL SCROLL
-// Guarda la posición del scroll antes de redirigir
-document.querySelectorAll('.btn_package').forEach(button => {
-  button.addEventListener('click', function() {
-      // Obtiene el valor de 'data-id_package' del botón que fue clicado
-      const idPackage = this.getAttribute('data-id_package');
-      
-      // Guarda la posición del scroll en localStorage
-      localStorage.setItem('scrollPosition', window.scrollY);
-      
-      // Redirige a la URL con el id_package dinámico
-      window.location.href = "model/moreInfoPackage.php?id_package=" + idPackage;
-  });
-});
-
-// Restaura la posición del scroll cuando la página se carga
-window.addEventListener('load', function() {
-  const scrollPosition = localStorage.getItem('scrollPosition');
-  if (scrollPosition) {
-      window.scrollTo(0, scrollPosition);
-  }
-});
-
 
 
 // VALIDACION CONTRASEÑA

@@ -17,6 +17,7 @@ if (btn_iniciarSesion2) {
 if (btn_cerrarModal) {
     btn_cerrarModal.onclick = function() {
         modalContainer.classList.remove('open');
+        modalPackageContainer.classList.remove('open');
     };
 }
 
