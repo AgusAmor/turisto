@@ -22,16 +22,21 @@ create table if not exists user(
 create table if not exists package(
     id_package int not null auto_increment primary key,
     country_destination varchar(50) not null,
-    city_destination varchar(100),
+    city_destination varchar(100) default null,
     passengers int(2) not null,
+    description varchar(255) not null,
+    image varchar(255) not null,
     transfer boolean default false,
     luggage varchar(10),
     lodging boolean default false
 );
-
 
 insert into user_type (type)
 values
     ('usuario'),
     ('asesor'),
     ('administrador');
+
+insert into package (country_destination, city_destination, passengers, description, image, transfer, luggage, lodging)
+VALUES
+    ('Aruba', null, 2, 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum', 'img/internacinoales/aruba.jpg', false, 'ligero', true);

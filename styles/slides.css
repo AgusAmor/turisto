@@ -19,7 +19,7 @@
     display: flex;
 }
 
-.slide a{
+.slide .btn_package{
     margin: auto 15%;
     width: 70%;
     background-color: rgb(248,160,73);
@@ -27,11 +27,12 @@
     color: rgb(238, 226, 206);
     border: none;
     padding: 5px;
+    outline: none;
     text-align: center;
     transition: background-color, font-size 0.2s linear;
 }
 
-.slide a:hover{
+.slide .btn_package:hover{
     background-color: rgb(6, 129, 145);    
     font-size: 1.3rem;
     cursor: pointer;

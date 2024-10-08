@@ -46,6 +46,24 @@ if(closeNavBar){
 };
 }
 
+// GUARDAR EL SCROLL
+// Guarda la posición del scroll antes de redirigir
+document.querySelectorAll('.btn_package').forEach(button => {
+  button.addEventListener('click', function() {
+      localStorage.setItem('scrollPosition', window.scrollY);
+      window.location.href = "model/moreInfoPackage.php?id_package=1";
+  });
+  console.log()
+});
+
+// Restaura la posición del scroll cuando la página se carga
+window.addEventListener('load', function() {
+  const scrollPosition = localStorage.getItem('scrollPosition');
+  if (scrollPosition) {
+      window.scrollTo(0, scrollPosition);
+  }
+});
+
 
 // VALIDACION CONTRASEÑA
 document.getElementById('formRegistrarseCheckPass').onsubmit = function(event) {
