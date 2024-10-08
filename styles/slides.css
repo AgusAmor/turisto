@@ -19,7 +19,7 @@
     display: flex;
 }
 
-.slide .btn_package{
+.btn_package{
     margin: auto 15%;
     width: 70%;
     background-color: rgb(248,160,73);
@@ -32,10 +32,18 @@
     transition: background-color, font-size 0.2s linear;
 }
 
-.slide .btn_package:hover{
+#nacionales .btn_package{
+    background-color: rgb(6, 129, 145);
+}
+
+.btn_package:hover{
     background-color: rgb(6, 129, 145);    
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+#nacionales .btn_package:hover{
+    background-color: rgb(248,160,73);
 }
 
 .card{

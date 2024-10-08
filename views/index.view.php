@@ -144,8 +144,8 @@
         </nav>
     </div>
 
-    <section class="sectionSlides">
-        <h2 id="paquetes">Paquetes</h2>
+    <section class="sectionSlides" id="paquetes">
+        <h2>Paquetes</h2>
         <div class="btn_slides">
             <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
@@ -195,8 +195,8 @@
             </div>
         </div>
     </section>
-    <section class="sectionSlides">
-        <h2 id="cruceros">Cruceros</h2>
+    <section class="sectionSlides" id="cruceros">
+        <h2>Cruceros</h2>
         <div class="btn_slides">
             <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
@@ -249,8 +249,8 @@
     <section class="bannerIndex">
         <img src="https://placehold.co/1920x700" alt="">
     </section>
-    <section class="sectionSlides">
-        <h2 id="internacionales">Vuelos Internacionales</h2>
+    <section class="sectionSlides" id="internacionales">
+        <h2>Vuelos Internacionales</h2>
         <div class="btn_slides">
             <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
@@ -308,8 +308,8 @@
             </div>
         </div>
     </section>
-    <section class="sectionSlides">
-        <h2 id="nacionales">Vuelos Nacionales</h2>
+    <section class="sectionSlides" id="nacionales">
+        <h2>Vuelos Nacionales</h2>
         <div class="btn_slides">
             <button class="prev" onclick="moverSlide(-1)"><i class="bi bi-chevron-left"></i></button>
             <button class="next" onclick="moverSlide(1)"><i class="bi bi-chevron-right"></i></button>
@@ -319,25 +319,25 @@
                 <div class="slide">
                     <div class="card">
                         <img src="img/nacionales-argentina/bariloche.jpg" alt="bariloche">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="9">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/nacionales-argentina/iguazu.jpg" alt="iguazu">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="10">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/nacionales-argentina/mendoza.jpg" alt="mendoza">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="11">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
                     <div class="card">
                         <img src="img/nacionales-argentina/salta.jpg" alt="salta">
-                        <button>Ver mas...</button>
+                        <button class="btn_package" data-id_package="12">Ver mas...</button>
                     </div>
                 </div>
                 <div class="slide">
