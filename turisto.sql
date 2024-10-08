@@ -1,6 +1,11 @@
 create database if not exists turisto;
 use turisto;
 
+create table if not exists user_type(
+    id_user_type int not null auto_increment primary key,
+    type varchar(15) not null
+);
+
 create table if not exists user(
 	id_user int not null auto_increment primary key,
     email varchar(40) not null,
@@ -12,11 +17,6 @@ create table if not exists user(
     access int not null,
     banned boolean not null,
     foreign Key (access) references user_type (id_user_type)
-);
-
-create table if not exists user_type(
-    id_user_type int not null auto_increment primary key,
-    type varchar(15) not null
 );
 
 create table if not exists package(
