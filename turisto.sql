@@ -24,7 +24,7 @@ create table if not exists package(
     country_destination varchar(50) not null,
     city_destination varchar(100) default null,
     passengers int(2) not null,
-    description varchar(255) not null,
+    description varchar(500) not null,
     image varchar(255) not null,
     transfer boolean default false,
     luggage varchar(10),

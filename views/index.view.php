@@ -53,7 +53,9 @@
                 echo "<li>Hospedaje</li>";
             }
         echo"</ul>
-            <p>$description</p>
+            <div>
+                <p>$description</p>
+            </div>
         </div>
     </div>
     </div>

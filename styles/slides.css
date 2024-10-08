@@ -149,6 +149,14 @@
     text-align: center;
 }
 
+#modalPackage div div{
+    overflow-y: auto;
+    width: 90%;
+    margin: 5%;
+    height: 45%;
+    text-align: center;
+}
+
 #btn_cerrarModalPackage{
     position: absolute;
     margin: 5px;
