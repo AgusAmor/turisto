@@ -99,7 +99,7 @@
 /* modal */
 #modalPackageContainer{
     position: fixed;
-    z-index: 10;
+    z-index: 5;
     width: 100%;
     height: 100vh;
     top: 0;

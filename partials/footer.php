@@ -36,6 +36,7 @@
 
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="js/header.js"></script>
 <script src="js/app.js"></script>
 <script src="js/slides.js"></script>
 <script src="js/modal.js"></script>

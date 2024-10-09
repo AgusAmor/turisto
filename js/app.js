@@ -1,4 +1,4 @@
-// GUARDAR EL SCROLL
+// GUARDAR EL SCROLL (INDEX)
 // Guarda la posición del scroll antes de redirigir
 document.querySelectorAll('.btn_package').forEach(button => {
   button.addEventListener('click', function() {
@@ -28,9 +28,9 @@ window.addEventListener('load', function() {
 });
 
 
+// TITLE EN MOBILE NIÑOS (INDEX)
 const item = document.getElementById('spanNinios');
 const titlePopup = document.getElementById('titlePopup');
-
 
 item.addEventListener('touchstart', (e) => {
   const titleText = item.getAttribute('title');
@@ -53,7 +53,7 @@ item.addEventListener('touchmove', () => {
 });
 
 
-// SELECT FORM
+// SELECT FORM (INDEX)
 // document.addEventListener('DOMContentLoaded', function () {
 //     const elemento = document.getElementById('origen');
 //     const choices = new Choices(elemento, {
@@ -71,38 +71,7 @@ item.addEventListener('touchmove', () => {
 // });
 
 
-// HEADER STICKY
-const header = document.getElementById('header');
-const logo = document.getElementById('logo');
-const logoScroll = document.getElementById('logoScroll');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-
-var burger = document.getElementById('burger');
-var closeNavBar = document.getElementById('closeNavBar');
-var headerBarMobile = document.getElementById('headerBarMobile');
-
-if(burger){
-  burger.onclick = function() {
-    headerBarMobile.classList.add('openNavBar');
-  };
-}
-
-if(closeNavBar){
-  closeNavBar.onclick = function() {
-    headerBarMobile.classList.remove('openNavBar');
-};
-}
-
-
-// VALIDACION CONTRASEÑA
+// VALIDACION CONTRASEÑA (REGISTER)
 document.getElementById('formRegistrarseCheckPass').onsubmit = function(event) {
   var pass = document.getElementById('pass');
   var pass2 = document.getElementById('pass2');

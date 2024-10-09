@@ -67,29 +67,29 @@
                 }
             ?>
         </div>
+        <div id="headerBarMobile">
+            <button id="closeNavBar"><i class="bi bi-x-lg"></i></button>
+                <div class="navbarMobile">
+                    <!-- <nav>
+                        <li><a href="/web-app-turisto/">Inicio</a></li>
+                        <li><a href="#">Sedes</a></li>
+                        <li><a href="#">Paquetes de vuelos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </nav> -->
+                </div>
+                <div id="sesion_contenedor" >
+                <?php
+                if (isset($_SESSION['email'])){
+                    echo "
+                        <a href=model/logOut.php>Cerrar sesión </a>
+                    ";
+                }else{
+                    echo "
+                        <button id=btn_iniciarSesion2 >Iniciar sesión </button>
+                        <a href=/web-app-turisto/signUp >Registrarse </a>
+                    ";
+                }
+                ?>
+                </div>
+        </div>
     </header>
-    <div id="headerBarMobile">
-        <button id="closeNavBar"><i class="bi bi-x-lg"></i></button>
-            <div class="navbarMobile">
-                <!-- <nav>
-                    <li><a href="/web-app-turisto/">Inicio</a></li>
-                    <li><a href="#">Sedes</a></li>
-                    <li><a href="#">Paquetes de vuelos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </nav> -->
-            </div>
-            <div id="sesion_contenedor" >
-            <?php
-            if (isset($_SESSION['email'])){
-                echo "
-                    <a href=model/logOut.php>Cerrar sesión </a>
-                ";
-            }else{
-                echo "
-                    <button id=btn_iniciarSesion2 >Iniciar sesión </button>
-                    <a href=/web-app-turisto/signUp >Registrarse </a>
-                ";
-            }
-            ?>
-            </div>
-    </div>

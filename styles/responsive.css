@@ -28,7 +28,6 @@
 
     #burger{
         display: block;
-        z-index: 2;
         right: 0%;
     }
 
@@ -38,7 +37,6 @@
         font-size: 1.5rem;
         outline: none;
         background-color: rgba(0, 0, 0, 0);
-        z-index: 1000;
     }
 
     #headerBar{
@@ -54,7 +52,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
         height: 50%;
-        z-index: 2;
         border-bottom-left-radius: 15px;
     }
 
@@ -290,7 +287,6 @@
     
     #burger{
         display: block;
-        z-index: 2;
         right: 0%;
     }
 
@@ -300,7 +296,6 @@
         font-size: 1.5rem;
         outline: none;
         background-color: rgba(0, 0, 0, 0);
-        z-index: 1000;
     }
 
     #headerBar{
@@ -316,7 +311,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
         height: 50%;
-        z-index: 2;
         border-bottom-left-radius: 15px;
     }
 

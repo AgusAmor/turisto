@@ -83,6 +83,7 @@ header.scrolled a{
 
 #headerBarMobile{
     display: none;
+    z-index: 5;
 }
 
 .navbar{
@@ -139,6 +140,7 @@ header.scrolled a{
     outline: none;
     position: relative;
     display: none;
+    z-index: 2;
 }
 /**/
 
@@ -217,7 +219,7 @@ header.scrolled a{
     padding: 5px;
     border-radius: 4px;
     display: none;
-    z-index: 1000;
+    z-index: 1;
     font-size: 0.8rem;
 }
 
