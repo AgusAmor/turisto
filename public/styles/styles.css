@@ -1,0 +1,597 @@
+/* GENERAL */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+    scroll-behavior: smooth !important;
+}
+
+@font-face {
+    font-family: 'myFonts';
+    src: url('fonts/Brand.otf') format('otf'),
+         url('fonts/Brand.ttf') format('ttf'),
+         url('fonts/Brand.woff') format('woff'),
+         url('fonts/GOTHIC.TTF') format('TTF'),
+         url('fonts/GOTHICB.TTF') format('TTF'),
+         url('fonts/GOTHICBI.TTF') format('TTF'),
+         url('fonts/GOTHICI.TTF') format('TTF');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+body{
+    background-color: rgba(238, 226, 206, 0.10);
+    font-family: 'myFonts', sans-serif;
+    font-size: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+button{
+    outline: none;
+}
+
+h2, h3{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(248,160,73);
+}
+/**/
+
+
+/*HEADER*/
+header{
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-content: center;
+    padding-top: 5px;
+    height: 100px;
+    transition: background-color 0.3s, color 0.5s;
+    z-index: 1;
+}
+
+.logoMobile{
+    display: none; 
+}
+
+header.scrolled {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);    
+}
+
+header.scrolled a{
+    color: rgb(238, 226, 206);
+}
+
+#headerBar{
+    width: 80%;
+    display: flex;
+}
+
+#headerBarMobile{
+    display: none;
+    z-index: 5;
+}
+
+.navbar{
+    width: 90%;
+    display: flex;
+    padding-left: 50%;
+    align-content: center;
+}
+
+.navbar a{
+    color: rgb(6,129,145);
+    transition: color, font-size 0.1s linear;
+}
+
+.navbar a:hover{
+    color: rgb(248,160,73);
+    font-size: 1.1rem;
+}
+
+#sesion_contenedor{
+    display: grid;
+    width: 20%;
+    align-content: center;
+    padding: 2%;
+    gap: 10%;
+    margin-left: 80%;
+}
+
+#sesion_contenedor a, button{
+    border-radius: 20px;
+    background-color: rgb(6,129,145);
+    color: rgb(238,226,206);
+    border: none;
+    padding: 3px;
+    text-align: center;
+    align-content: center;
+    transition: background-color,font-size 0.2s linear;
+}
+
+#sesion_contenedor a:hover, button:hover{
+    background-color: rgb(248,160,73);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#sesion_contenedor button:focus{
+    outline: none;
+}
+
+#burger{
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(6, 129, 145);
+    font-size: 2rem;
+    outline: none;
+    position: relative;
+    display: none;
+    z-index: 2;
+}
+/**/
+
+
+/*INDEX*/
+#bannerForm{
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+
+#avion{
+    height: 24px;
+}
+
+#bannerForm img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#formIndex {
+    position: absolute;
+    top: 40%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+    height: 450px;
+}
+
+#formIndex input, .choices__inner{
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: background-color 0.1s linear;
+    padding: 2px;
+}
+
+#formIndex input:hover, .choices__inner:hover{
+    background-color: rgb(248, 160, 73);
+}
+
+#formIndex legend{
+    text-align: center;
+}
+
+.campoForm {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.pasajeros{
+    display: none;
+}
+
+.niniosSpan{
+    cursor: pointer;
+    color: rgb(248, 160, 73);
+}
+
+.niniosSpan:hover{
+    color: rgb(6, 129, 145);
+}
+
+#titlePopup {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+    z-index: 1;
+    font-size: 0.8rem;
+}
+
+.contenedorFecha{
+    display: none;
+}
+
+label{
+    align-content: center;
+}
+
+.select label{
+    width: 10%;
+    margin: 0px;
+}
+
+.select{
+    display: flex;
+    gap: 2%;
+}
+
+/*temporal hasta la api de aeropuertos*/
+.select{
+    justify-content: center;
+}
+
+.choices{
+    width: 80%;
+    margin-left: 3%;
+}
+
+#adultos, #ninios, #mascotas{
+    width: 8%;
+    margin-right: 3%;
+    text-align: center;
+}
+
+#ida, #vuelta{
+    width: 23%;
+    margin-right: 2%;
+}
+
+.botoneraForm{
+    text-align: center;
+    padding: 2%;
+    align-content: center;
+}
+
+#formIndex .botoneraForm input{
+    border-radius: 30px;
+    padding: 10px;
+    border-color: rgb(248, 160, 73);
+    background-color: rgb(248, 160, 73, 0.5);
+}
+
+#formIndex .botoneraForm input:hover{
+    background-color: rgb(6,129,145);
+    border-color: rgba(0, 0, 0, 0);
+}
+
+/* input number sin botones */
+/* opera, chrome, safari y edge */
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+/**/
+
+#navIndex{
+    margin: 0% auto 3% auto;
+    width: 60%;
+    background-color: rgb(238,226,206);
+    background-color: rgb(248,160,73);
+    height: 50px;
+    align-content: center;
+    border-radius: 30px;
+}
+
+#navIndex nav{
+    display: flex;
+    gap: 2%;
+    width: auto;
+    justify-content: space-around;
+}
+
+#navIndex nav a{
+    color: rgb(238,226,206);
+    font-weight: bold;
+    padding: 15px;
+    transition: color, font-size 0.2s linear;
+}
+
+#navIndex nav a:hover{
+    color: rgb(6,129,145);
+    font-size: 1.3rem;
+}
+
+.bannerIndex{
+    width: 100%;
+    margin: 50px auto
+}
+
+.bannerIndex img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#cruceros{
+    margin-top: 10px;
+}
+/**/
+
+
+/* REGISTER */
+body.fondoForm {
+    font-family: 'myFonts', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(241 218 180);
+}
+
+.formRegistrarse{
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 8%;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+
+.formRegistrarse img{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.formRegistrarse fieldset{
+    display: grid;
+    padding: 30px;
+}
+
+.formRegistrarse .campoForm{
+    width: 100%;
+    display: flex;
+    gap: 2%;
+    align-content: center;
+}
+
+.formRegistrarse label{
+    align-content: center;
+    height: 100%;
+}
+
+.formRegistrarse #registrarse{
+    margin: auto 35%;
+    width: 30%;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+#volver{
+   padding: 1px 5px; 
+   font-size: 1.2rem;
+}
+
+.redirectSesion a{
+    padding: 5px 10px;
+}
+
+#logInRedirect{
+    margin-top: 20px;
+}
+
+.formRegistrarse a{
+    position: absolute;
+    font-size: 1.5rem;
+    margin: 2%;
+    color: rgb(248, 160, 73);
+    background-color: rgb(6, 129, 145, 0.5);
+    border-radius: 20px;
+    font-weight: bold;
+    transition: font-size,color,border-radius 0.1s linear;
+}
+
+.formRegistrarse a:hover{
+    font-size: 2rem;
+    color: rgb(155,207,205);
+    border-radius: 5px;
+}
+
+.formRegistrarse input{
+    border: rgb(248, 160, 73) solid;
+    border-radius: 15px;
+    padding: 5px;
+    width: 170px;
+    background-color: rgb(238, 226, 206)
+}
+
+.formRegistrarse input:hover{
+    background-color: rgb(248, 160, 73);
+    transition: background-color 0.1s linear;
+}
+
+.formRegistrarse input:focus-visible{
+    border: solid rgb(155,207,205);
+    outline: none;
+    background-color: rgb(248, 160, 73);
+}
+
+#terminosContenedor{
+    font-size: 0.8rem;
+    display: flex;
+    position: absolute;
+    top: 65%;
+    width: 90%;
+    justify-content: center;
+    padding: 0px;
+}
+
+#terminosContenedor label{
+    display: grid;
+    margin-left: 10px;
+}
+
+#terms{
+    width: 20px;
+}
+
+#terminos{
+    font-size: 0.8rem;
+    margin-top: 15px;
+    margin-left: 25px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#terminosContenedor a{
+    color: rgb(0,0,0);
+    transition: color 0.1s linear;
+}
+
+#terminosContenedor a:hover{
+    color: rgb(155,207,205);
+}
+
+#nombreApellido, #mediosContacto{
+    justify-content: space-between;
+}
+
+#contrasenias{
+    text-align: center;
+    background-color: rgb(248, 160, 73, 0.2);
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+#contrasenias div{
+    display: grid;
+    align-content: center;
+    margin: auto;
+}
+
+#contrasenias input{
+    text-align: center;
+    margin: auto;
+}
+
+#name{
+    margin-left: 45px;
+}
+
+#email{
+    margin-left: 65px;
+}
+
+#nationality{
+    margin-left: 5px;
+}
+
+#registrarse{
+    transition: border 0.1s linear;
+}
+
+#registrarse:hover{
+    border: solid rgb(155,207,205);
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: rgb(248, 160, 73);
+    border-radius: 3px;
+}
+
+.yaRegistrado input{
+    border: solid red;
+}
+
+.yaRegistrado p{
+    font-size: 0.7rem;
+    position: relative;
+    left: 20%;
+    top: -30%;
+}
+
+/**/
+
+
+/*FOOTER*/
+footer{
+    background: rgb(6,129,145);
+    margin-top: 20%;
+    bottom: 0%;
+    color: rgb(238, 226, 206);
+}
+
+footer a{
+    color: rgb(238, 226, 206);
+    font-weight: bold;
+    transition: color 0.2s linear;
+}
+
+footer a:hover{
+    color: rgb(248, 160, 73);
+}
+
+footer h4,h5{
+    color: rgb(248, 160, 73);
+}
+
+.footer_contenedor{
+    display: flex;
+    width: 100%;
+}
+
+.navFooter{
+    align-content: center;
+    left:30%;
+    position: relative;
+}
+
+#contacto{
+    position: relative;
+    width: 55%;
+    padding: 20px;
+}
+
+#contacto ul{
+    display: flex;
+    gap: 5%;
+}
+
+#location{
+    font-weight: 100;
+}
+
+.redesFooter{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.redesFooter div{
+    width: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+/**/

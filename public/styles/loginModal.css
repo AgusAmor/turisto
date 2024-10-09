@@ -1,0 +1,163 @@
+/* modal */
+#modalContainer{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: none;
+    animation: displayModal 0.5s;
+}
+
+#modalContainer.open{
+    display: block;
+    animation: displayModal 0.5s;
+}
+
+@keyframes displayModal {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+/**/
+
+/* login */
+.formSesion{
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 2%;
+    left: 30%;
+    width: 40%;
+    height: 350px;
+    border-style: solid;
+    border-color: rgb(248, 160, 73);
+}
+
+.formSesion img{
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.formSesion fieldset{
+    padding-top: 45px;
+    display: grid;
+    gap: 2%;
+}
+
+.formSesion .campoForm{
+    width: 50%;
+    margin: auto 25%;
+    display: grid;
+    text-align: center;
+    align-content: center;
+}
+
+#iniciarSesion{
+    margin: auto 35%;
+    width: 30%;
+    padding: 5px;
+    border-radius: 30px;
+    transition: border,background-color 0.1s linear;
+}
+
+#iniciarSesion:hover{
+    border: solid rgb(155,207,205);
+    cursor: pointer;
+}
+
+#btn_cerrarModal{
+    position: absolute;
+    padding: 0px 5px;
+    font-size: 1.5rem;
+    margin: 2%;
+    text-align: center;
+    color: rgb(248, 160, 73);
+    background-color: rgb(6, 129, 145, 0.5);
+    border-radius: 15px;
+    outline: none;
+    transition: color,border-radius 0.1s linear;
+    cursor: pointer;
+}
+
+#btn_cerrarModal:hover{
+    color: rgb(155,207,205);
+    border-radius: 5px;
+}
+
+.formSesion a{
+    position: absolute;
+    font-size: 1.5rem;
+    margin: 2%;
+    text-align: center;
+    color: rgb(248, 160, 73);
+    transition: color,font-size 0.1s linear;
+}
+
+.formSesion a:hover{
+    color: rgb(155,207,205);
+    font-size: 2rem;
+}
+
+.formSesion input{
+    border: rgb(248, 160, 73) solid;
+    border-radius: 15px;
+    text-align: center;
+    transition: background-color 0.1s linear;
+}
+
+.formSesion input:hover{
+    background-color: rgb(248, 160, 73);
+}
+
+.formSesion input:focus-visible{
+    border: solid rgb(155,207,205);
+    outline: none;
+    background-color: rgb(248, 160, 73);
+}
+
+.redirectSesion{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#signUpRedirect{
+    background-color: rgb(6, 129, 145, 0.5);
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+#signUpRedirect:hover{
+    border-radius: 5px;
+}
+
+.redirectSesion p, #signUpRedirect, #logInRedirect{
+    font-size: 0.8rem;
+    font-weight: bold;
+    transition: color,border-radius 0.1s linear;
+}
+
+#errorMessage{
+    text-align: center;
+    width: 40%;
+    position: relative;
+    top: 60%;
+    left: 30%;
+    background-color: rgb(155,207,205);
+    padding: 10px;
+    border-radius: 20px;
+    align-content: center;
+}
+/**/
