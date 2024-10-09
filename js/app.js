@@ -28,6 +28,30 @@ window.addEventListener('load', function() {
 });
 
 
+const item = document.getElementById('spanNinios');
+const titlePopup = document.getElementById('titlePopup');
+
+
+item.addEventListener('touchstart', (e) => {
+  const titleText = item.getAttribute('title');
+  if (titleText) {
+    titlePopup.textContent = titleText;
+    titlePopup.style.display = 'block';
+    titlePopup.style.left = `${e.touches[0].pageX}px`;
+    titlePopup.style.top = `${e.touches[0].pageY}px`;
+  }
+});
+
+// Evento touchend para ocultar el title
+item.addEventListener('touchend', () => {
+  titlePopup.style.display = 'none';
+});
+
+// Opcional: ocultar el title cuando se mueve el dedo (por ejemplo, en un scroll)
+item.addEventListener('touchmove', () => {
+  titlePopup.style.display = 'none';
+});
+
 
 // SELECT FORM
 // document.addEventListener('DOMContentLoaded', function () {

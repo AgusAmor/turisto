@@ -203,10 +203,22 @@ header.scrolled a{
 
 .niniosSpan{
     cursor: pointer;
+    color: rgb(248, 160, 73);
 }
 
 .niniosSpan:hover{
-    color: rgb(248, 160, 73);
+    color: rgb(6, 129, 145);
+}
+
+#titlePopup {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    display: none;
+    z-index: 1000;
+    font-size: 0.8rem;
 }
 
 .contenedorFecha{

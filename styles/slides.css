@@ -111,10 +111,10 @@
 
 #modalPackageContainer.open{
     display: block;
-    animation: displayModal 0.5s;
+    animation: displayModalPackage 0.5s;
 }
 
-@keyframes displayModal {
+@keyframes displayModalPackage {
     0%{
         transform: translateX(-100%);
     }
