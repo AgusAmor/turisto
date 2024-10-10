@@ -13,10 +13,21 @@ if (isset($_SESSION['id'])){
         $mascotas = (!empty($_GET['mascotasM'])) ? $_GET['mascotasM'] : $_GET['mascotas'];
         
         $mensaje = "- Nombre: $_SESSION[name]\n- Apellido: $_SESSION[surname]\n- Nacionalidad: $_SESSION[nationality]\n- Contacto: $_SESSION[email] | $_SESSION[phone]\n- Origen: $origen | Destino: $destino\n- Fecha ida: $ida | Fecha vuelta: $vuelta\n- Pasajeros: adultos = $adultos | niños = $ninios | mascotas = $mascotas";
-    }else if (){
+    }else if (!empty($_GET['id_package'])){
+        $id_package = $_GET['id_package'];
+        $stmt = $con->prepare("SELECT * FROM package WHERE id_package = ?");
+        $stmt->bind_param("s", $id_package);
+        $stmt->execute();
+        $stmt->bind_result($id_package, $country, $city, $passengers, $description, $image, $transfer, $luggage, $lodging);
+        $stmt->fetch();
+        $stmt->close();
 
+        $destination = (!empty($city)) ? $city . ", " . $country : $country;
+        $transfer = ($transfer) ? "Si" : "No";
+        $lodging = ($lodging) ? "Si" : "No";
+        
+        $mensaje = "- Nombre: $_SESSION[name]\n- Apellido: $_SESSION[surname]\n- Destino: $destination\n- Pasajeros: $passengers\n- Descripcion: $description\n- Translado: $transfer\n- Equipaje: $luggage\n- Hospedaje: $lodging";
     }
-    
     
     var_dump ($_GET);
     echo "<br><br>$mensaje";

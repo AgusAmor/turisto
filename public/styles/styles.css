@@ -263,7 +263,8 @@ label{
 
 #ida, #vuelta{
     width: 23%;
-    margin-right: 2%;
+    margin-right: 1%;
+    font-size: 0.8rem;
 }
 
 .botoneraForm{

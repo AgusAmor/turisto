@@ -50,13 +50,12 @@
             if(!empty($lodging)){
                 echo "<li>Hospedaje</li>";
             }
-            echo "<li>Hospedaje</li>";
         echo"</ul>
             <div id=textPackage >
                 <p>$description</p>
             </div>
             <div id=requerestPackage>
-                <a href=model/contactAssessor.php?id_package=$id_package>Contactar Asesor</a>
+                <a href=app/model/contactAssessor.php?id_package=$id_package>Contactar Asesor</a>
             </div>
         </div>
     </div>
