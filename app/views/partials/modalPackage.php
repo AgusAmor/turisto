@@ -38,7 +38,7 @@
     <button id=btn_cerrarModalPackage ><i class='bi bi-x' ></i></button>
     <div id=modalPackage >
         <img src=$image alt=$country />
-        <div>
+        <div id=modalContent>
             <h2>Viaja a $destination</h2>
             <ul>";
             if(!empty($transfer)){
@@ -50,9 +50,13 @@
             if(!empty($lodging)){
                 echo "<li>Hospedaje</li>";
             }
+            echo "<li>Hospedaje</li>";
         echo"</ul>
-            <div>
+            <div id=textPackage >
                 <p>$description</p>
+            </div>
+            <div id=requerestPackage>
+                <a href=model/contactAssessor.php?id_package=$id_package>Contactar Asesor</a>
             </div>
         </div>
     </div>

@@ -12,24 +12,12 @@ window.addEventListener('scroll', () => {
 });
 
 
-var burger = document.getElementById('burger');
-var closeNavBar = document.getElementById('closeNavBar');
 var headerBarMobile = document.getElementById('headerBarMobile');
 
-if(burger){
-  burger.onclick = function() {
-    headerBarMobile.classList.add('openNavBar');
-  };
-}
-
-if(closeNavBar){
-  closeNavBar.onclick = function() {
-    headerBarMobile.classList.remove('openNavBar');
+document.getElementById('burger').onclick = function() {
+  headerBarMobile.classList.add('openNavBar');
 };
-}
 
-window.onclick = function(event) {
-    if (event.target === headerBarMobile) {
-        headerBarMobile.classList.remove('openNavBar');
-    }
-}
+document.getElementById('closeNavBar').onclick = function() {
+  headerBarMobile.classList.remove('openNavBar');
+};
