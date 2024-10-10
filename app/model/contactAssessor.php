@@ -26,7 +26,7 @@ if (isset($_SESSION['id'])){
         $transfer = ($transfer) ? "Si" : "No";
         $lodging = ($lodging) ? "Si" : "No";
         
-        $mensaje = "- Nombre: $_SESSION[name]\n- Apellido: $_SESSION[surname]\n- Destino: $destination\n- Pasajeros: $passengers\n- Descripcion: $description\n- Translado: $transfer\n- Equipaje: $luggage\n- Hospedaje: $lodging";
+        $mensaje = "- Nombre: $_SESSION[name]\n- Apellido: $_SESSION[surname]\n- Nacionalidad: $_SESSION[nationality]\n- Contacto: $_SESSION[email] | $_SESSION[phone]\n- Destino: $destination\n- Pasajeros: $passengers\n- Descripcion: $description\n- Translado: $transfer\n- Equipaje: $luggage\n- Hospedaje: $lodging";
     }
     
     var_dump ($_GET);
