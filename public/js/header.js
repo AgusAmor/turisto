@@ -15,9 +15,11 @@ window.addEventListener('scroll', () => {
 var headerBarMobile = document.getElementById('headerBarMobile');
 
 document.getElementById('burger').onclick = function() {
-  headerBarMobile.classList.add('openNavBar');
+  headerBarMobile.style.opacity='1';
+  headerBarMobile.style.transform='translateX(0%)';
 };
 
 document.getElementById('closeNavBar').onclick = function() {
-  headerBarMobile.classList.remove('openNavBar');
+  headerBarMobile.style.opacity='0';
+  headerBarMobile.style.transform='translateX(100%)';
 };
