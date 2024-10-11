@@ -45,14 +45,16 @@
                             <input type="date" name="vueltaM" id="vueltaM" onkeydown="return false;" onclick="this.showPicker();" required />
                         </div>
                     </div>
-                    <div class="campoForm pasajerosO">
+                    <div class="campoForm pasajeros0">
                         <caption>Pasajeros</caption>
-                        <label for="adultos">Adultos:</label>
-                        <input type="number" name="adultos" id="adultos" value=1 min=0 max=10 step=1 >
-                        <label for="ninios">Niños:<span class="niniosSpan" title="Menores de 2 años">?</span></label>
-                        <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
-                        <label for="mascotas">Mascotas:</label>
-                        <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
+                        <div>
+                            <label for="adultos">Adultos:</label>
+                            <input type="number" name="adultos" id="adultos" value=1 min=0 max=10 step=1 >
+                            <label for="ninios">Niños:<span class="niniosSpan" title="Menores de 2 años">?</span></label>
+                            <input type="number" name="ninios" id="ninios" min=0 max=10 step=1 placeholder=0>
+                            <label for="mascotas">Mascotas:</label>
+                            <input type="number" name="mascotas" id="mascotas" min=0 max=10 step=1 placeholder=0>
+                        </div>
                     </div>
                     <div class="campoForm pasajeros">
                         <caption>Pasajeros</caption>

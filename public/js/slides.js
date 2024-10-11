@@ -1,5 +1,4 @@
 // GUARDAR EL SCROLL (INDEX)
-// Guarda la posición del scroll antes de redirigir
 document.querySelectorAll('.btn_package').forEach(button => {
     button.addEventListener('click', function() {
         const idPackage = this.getAttribute('data-id_package');
@@ -87,13 +86,44 @@ document.querySelectorAll('.btn_package').forEach(button => {
 
 
 
-if (btn_cerrarModalPackage) {
-    btn_cerrarModalPackage.onclick = function() {
-        modalPackageContainer.classList.remove('open');
-    };
+
+// BOTONES DE PAQUETES
+var modalPackageContainer = document.getElementById('modalPackageContainer');
+var btn_package = document.getElementById('btn_package');
+var btn_cerrarModalPackage = document.getElementById('btn_cerrarModalPackage');
+
+btn_package.onclick = function() {
+    openModal();
+};
+
+btn_cerrarModalPackage.onclick = function() {
+    closeModal();
+};
+
+window.onclick = function(event) {
+    if (event.target === modalPackageContainer) {
+        closeModal();
+    }
+}
+
+// Función para abrir el modal
+function openModal() {
+    modalPackageContainer.classList.remove('closing'); // Asegúrate de que la clase de cierre se quite
+    modalPackageContainer.classList.add('open');  // Agrega la clase 'open' para iniciar la animación de apertura
+}
+
+// Función para cerrar el modal
+function closeModal() {
+    modalPackageContainer.classList.add('closing'); // Inicia la animación de cierre
+    setTimeout(function() {
+        modalPackageContainer.classList.remove('open', 'closing'); // Remueve las clases después de la animación
+    }, 500);  // El tiempo de espera debe coincidir con el tiempo de la animación CSS
 }
 
 
+
+
+// SLIDE
 const sliders = document.querySelectorAll('.slider');
 
 sliders.forEach((slider) => {
