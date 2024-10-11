@@ -33,7 +33,7 @@
             echo "<div id=modalContainer>";
         }
         ?>
-            <form action="app/model/logInCheck.php" method="post" class="formSesion">
+            <form action="app/model/logInCheck.php" method="post" class="formSesion" id="formSesionModal">
                 <img src="public/img/fondoForm.png" alt="">
                 <button id="btn_cerrarModal"><i class="bi bi-x"></i></button>
                 <fieldset>
