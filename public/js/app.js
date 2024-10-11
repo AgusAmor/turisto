@@ -22,6 +22,7 @@ item.addEventListener('touchmove', () => {
   titlePopup.style.display = 'none';
 });
 
+
 // OCULTAR CAMPOS DEL FORM
 function toggleRequired() {
   // Detecta si es un tamaño de pantalla mobile

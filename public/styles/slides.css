@@ -97,26 +97,27 @@
 /**/
 
 /* modal */
-#modalPackageContainer{
+#modalPackageContainer {
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, 0.5);
-    display: none;
-    animation: displayModal 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
 #modalPackageContainer.open {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
 }
 
 #modalPackageContainer.closing {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateX(-100%);
 }
 
 #modalPackage{

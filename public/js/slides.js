@@ -1,32 +1,3 @@
-// GUARDAR EL SCROLL (INDEX)
-document.querySelectorAll('.btn_package').forEach(button => {
-    button.addEventListener('click', function() {
-        const idPackage = this.getAttribute('data-id_package');
-        
-        // Guarda la posición del scroll y establece una bandera
-        localStorage.setItem('scrollPosition', window.scrollY);
-        localStorage.setItem('fromSlider', 'true');
-        
-        // Redirige a la URL con el id_package dinámico
-        window.location.href = "app/model/moreInfoPackage.php?id_package=" + idPackage;
-    });
-  });
-  
-  // Restaura la posición del scroll solo si viene del slider
-  window.addEventListener('load', function() {
-    const scrollPosition = localStorage.getItem('scrollPosition');
-    const fromSlider = localStorage.getItem('fromSlider');
-  
-    // Si la bandera indica que venimos del slider, restaurar scroll
-    if (scrollPosition && fromSlider === 'true') {
-        window.scrollTo(0, scrollPosition);
-        // Limpiar el localStorage para no aplicar el scroll siempre
-        localStorage.removeItem('scrollPosition');
-        localStorage.removeItem('fromSlider');
-    }
-});
-
-
 // const slider = document.querySelector('.slider');
 // let currentIndex = 0;
 // const totalSlides = 8;
@@ -89,36 +60,56 @@ document.querySelectorAll('.btn_package').forEach(button => {
 
 // BOTONES DE PAQUETES
 var modalPackageContainer = document.getElementById('modalPackageContainer');
-var btn_package = document.getElementById('btn_package');
-var btn_cerrarModalPackage = document.getElementById('btn_cerrarModalPackage');
 
-btn_package.onclick = function() {
-    openModal();
+document.querySelectorAll('.btn_package').forEach(button => {
+    button.addEventListener('click', function() {
+        const idPackage = this.getAttribute('data-id_package');
+        
+        // Guarda la posición del scroll y establece una bandera
+        localStorage.setItem('scrollPosition', window.scrollY);
+        localStorage.setItem('fromSlider', 'true');
+        
+        // Redirige a la URL con el id_package dinámico
+        window.location.href = "app/model/moreInfoPackage.php?id_package=" + idPackage;
+        openPackageModal();
+    });
+});
+
+
+
+document.getElementById('btn_cerrarModalPackage').onclick = function() {
+    closePackageModal();
 };
-
-btn_cerrarModalPackage.onclick = function() {
-    closeModal();
-};
-
-window.onclick = function(event) {
-    if (event.target === modalPackageContainer) {
-        closeModal();
-    }
-}
 
 // Función para abrir el modal
-function openModal() {
-    modalPackageContainer.classList.remove('closing'); // Asegúrate de que la clase de cierre se quite
-    modalPackageContainer.classList.add('open');  // Agrega la clase 'open' para iniciar la animación de apertura
+function openPackageModal() {
+    modalPackageContainer.style.opacity = '1';
+    modalPackageContainer.style.transform = 'translateX(0%)';
+}
+    
+// Función para cerrar el modal
+function closePackageModal() {
+    setTimeout(function() {
+        modalPackageContainer.classList.remove('open', 'closing');
+    }, 100);
 }
 
-// Función para cerrar el modal
-function closeModal() {
-    modalPackageContainer.classList.add('closing'); // Inicia la animación de cierre
-    setTimeout(function() {
-        modalPackageContainer.classList.remove('open', 'closing'); // Remueve las clases después de la animación
-    }, 500);  // El tiempo de espera debe coincidir con el tiempo de la animación CSS
-}
+
+
+
+// GUARDAR EL SCROLL (INDEX)
+window.addEventListener('load', function() {
+    const scrollPosition = localStorage.getItem('scrollPosition');
+    const fromSlider = localStorage.getItem('fromSlider');
+  
+    // Si la bandera indica que venimos del slider, restaurar scroll
+    if (scrollPosition && fromSlider === 'true') {
+        window.scrollTo(0, scrollPosition);
+        // Limpiar el localStorage para no aplicar el scroll siempre
+        localStorage.removeItem('scrollPosition');
+        localStorage.removeItem('fromSlider');
+    }
+});
 
 
 
