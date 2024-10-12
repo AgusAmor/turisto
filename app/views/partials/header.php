@@ -28,7 +28,7 @@
         
         <?php
         if(isset($_GET['user']) || isset($_GET['password']) || isset($_GET['banned']) || isset($_GET['email'])){
-            echo "<div id=modalContainer class=open >";
+            echo "<div id=modalContainer style=transform:translateY(0%);opacity:1>";
         }else{
             echo "<div id=modalContainer>";
         }
@@ -92,4 +92,16 @@
                 ?>
                 </div>
         </div>
+        <?php
+        if (isset($_GET['userNull'])){
+            echo "
+            <div id=modalErrorContainer>
+                <div id=modalError>
+                <p>Inicie sesión antes de contactar a un asesor.</p>
+                <button id=btn_cerrarModalError>Iniciar Sesión</button>
+                </div>
+            </div>
+            ";
+        }
+        ?>
     </header>

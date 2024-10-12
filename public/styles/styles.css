@@ -87,6 +87,7 @@ header.scrolled a{
 
 #headerBarMobile{
     opacity: 0;
+    display: none;
     transform: translateX(100%);
     transition: opacity 0.5s, transform 0.5s;
     z-index: 5;
@@ -147,6 +148,34 @@ header.scrolled a{
     position: relative;
     display: none;
     z-index: 2;
+}
+
+#modalErrorContainer{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#modalError{
+    position: relative;
+    top: 50px;
+    left: 30%;
+    width: 40%;
+    height: 100px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(155,207,205);
+    border-radius: 15px;
+}
+
+#btn_cerrarModalError{
+    outline: none;
+    padding: 5px 10px;
 }
 /**/
 
